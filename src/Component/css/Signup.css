@@ -1,0 +1,68 @@
+.Sign-up-Page-Section{
+    background-color: #1876f221;
+}
+.Sign-up-Page-Section h1 {
+    font-weight: 700;
+    font-size: 36px;
+    color: #1e293b;
+}
+.form-body-content label {
+    font-size: 16px;
+    font-weight: 500;
+}
+.form-body-content ::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(21, 23, 23, 0.734) !important;
+}
+.form-body-content input {
+    padding: 8px 10px;
+    border-radius: 4px;
+    border: 1px solid green;
+}
+
+.Sign-up-Page-Section .sign-up-btn {
+    background-color: #8b3DFF;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    border-radius: 9px;
+    padding: 9px 0px 9px;
+}
+
+.Sign-up-Page-Section h6 {
+    font-size: 16px;
+    color: #8b3DFF;
+}
+
+.Sign-up-Page-Section .Google-btn {
+    background-color: rgba(255, 0, 0, 0.641);
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 9px;
+    font-size: 16px;
+    padding: 9px 0px 9px;
+}
+
+
+.Sign-up-Page-Section .Facebook-btn {
+    background-color: #1877f2;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 9px;
+    font-size: 16px;
+    padding: 9px 0px 9px;
+}
+
+.Sign-up-Page-Section .Facebook-btn:hover {
+    background-color: #1877f2;
+    color: white;
+}
+
+.shadow-section {
+    border-radius: 15px;
+    background-color: rgba(246, 240, 240, 0.552);
+    /* box-shadow: 0 .125rem .25rem rgba(2, 6, 23, .075) !important; */
+}

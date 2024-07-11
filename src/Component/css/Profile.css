@@ -1,0 +1,36 @@
+/* profile-Section */
+.main-profile-wrapper-body{
+    padding: 20px 0px 40px;
+    background-color:#ebebeb;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .main-profile-wrapper-body span{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .main-profile-wrapper-body .title-bar h6{
+    font-weight: 600;
+    font-size: 21px;
+  }
+  .main-profile-wrapper-body .container{
+    max-width: 1020px !important;
+    margin: 0px auto;
+  }
+  .main-profile-wrapper-body .profile-area .main-profile {
+    margin-bottom: 20px;
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+  .content-box ul li {
+    list-style-type: none;
+  }
+  .main-profile-wrapper-body .hrtag {
+    color: black;
+    border-bottom: 2px dotted;
+    display: block;
+    width: 100%;
+    height: 2px;
+  }
+  

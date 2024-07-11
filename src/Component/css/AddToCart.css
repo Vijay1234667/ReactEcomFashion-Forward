@@ -1,0 +1,72 @@
+.add-to-bag-main-page {
+  padding: 20px 0px 20px;
+}
+.add-to-bag-body-content .title-top-para {
+  letter-spacing: 1px;
+}
+
+.add-to-carts-featured-products-sizes-btn ul li {
+  margin-right: 6px;
+}
+.types-of-delivery-section a {
+  color: #04aa6d;
+  font-size: 13px;
+  font-weight: 500;
+}
+.pincode-input a {
+  color: #256a8f;
+  font-size: 14px;
+  font-weight: 400;
+}
+.add-to-carts-featured-products-sizes-btn .btn {
+  display: flex;
+  border-radius: 2px;
+  padding: 6px 10px;
+  margin-right: 4px;
+  justify-content: center;
+  align-items: center;
+  background-color: #256a8f;
+  color: white;
+}
+
+.add-to-carts-featured-products-add-tobag-whishlist-btn .btn {
+  background-color: #256a8f;
+  color: white;
+  font-size: 15px;
+  border-radius: 0px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+}
+.write-review-btn .btn {
+  padding: 7px 16px;
+  color: white;
+  background-color: #256a8f;
+  border-radius: 1px;
+}
+
+
+.add-to-cart-reviews-form-section input {
+  font-size: 15px;
+  padding: 10px;
+  letter-spacing: 0.5px;
+  border-radius: 3px;
+  font-weight: 400;
+}
+.add-to-cart-reviews-form-section label {
+  color: #000;
+}
+.reviews-submit-btn input {
+  background-color: #256a8f;
+  border-radius: 1px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 6px 16px;
+  color: white;
+}
+.choose-color a {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+

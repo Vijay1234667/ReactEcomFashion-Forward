@@ -1,0 +1,87 @@
+
+  .our-team-section .our-team-section-top-content h2 {
+    font-size: 33px;
+  }
+  
+  .our-team-section .our-team-section-top-content p {
+    color: #6a6a6a;
+  }
+  
+  .our-team-section .hire-team-btn .btn {
+    font-size: 15px;
+    color: #fff;
+    background-color: black;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  
+  .our-team-section .card .card-img-top {
+    width: 120px;
+    display: block;
+    margin: 0px auto;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .our-team-section .card {
+    padding: 25px;
+    flex-wrap: wrap;
+    border: 3px solid #00a5ff;
+    box-shadow: 0 0 14px rgba(53, 110, 255, 0.45098039215686275);
+    border-radius: 10px;
+    margin: 10px 0px;
+    overflow: hidden;
+  }
+  .our-team-section .card:hover {
+    background-color: black;
+    color: white !important;
+    transition: 0.7s ease-in-out;
+  }
+  .our-team-section .card:hover h4 {
+    color: white;
+  }
+  .our-team-section .card .Team-Social-left-icon li {
+    opacity: 0;
+  }
+  .our-team-section .card:hover .Team-Social-left-icon li {
+    color: black;
+    background-color: white;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .our-team-section .card h4 {
+    color: #404040;
+    margin-bottom: 15px;
+  }
+  .our-team-section .card h6 {
+    color: #949494;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 22px;
+  }
+  .our-team-section .card {
+    position: relative;
+}
+
+.Team-Social-left-icon li {
+    list-style-type: none;
+    background-color: black;
+    margin-bottom: 10px;
+    color: white;
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; 
+}
+
+
+.Team-Social-left-icon {
+    position: absolute;
+    top: 23%;
+    left: 10%; 
+}
+  
+
+  

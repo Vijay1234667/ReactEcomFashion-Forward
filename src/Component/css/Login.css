@@ -1,0 +1,66 @@
+
+.Login-Page-Section h1 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #1877f2;
+}
+.form-body-content label {
+    font-weight: 500;
+}
+.form-body-content input {
+    padding: 8px 10px;
+    border: 1px solid green;
+    border-radius: 4px;
+}
+.form-body-content ::placeholder {
+  color: black;
+}
+.Login-Page-Section .sign-btn {
+    background-color:#1877f2;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    border-radius: 9px;
+    padding: 9px 0px 9px;
+}
+
+.Login-Page-Section h6 {
+    font-size: 16px;
+    color: #1877f2;
+}
+
+.Login-Page-Section .Google-btn {
+    background-color: #db1436;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 9px;
+    font-size: 16px;
+    padding: 9px 0px 9px;
+}
+.Login-Page-Section .Facebook-btn {
+    background-color: #06101c91;
+    color: white;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 9px;
+    font-size: 16px;
+    padding: 9px 0px 9px;
+}
+
+.Login-Page-Section .Facebook-btn:hover {
+    background-color: #1877f2;
+    color: white;
+}
+.form-check-input {
+    padding: 5px !important;
+    margin-right: 6px;
+}
+.loginabsoluteright-absolute-image{
+    position: absolute;
+    top: 100%;
+    right: 11%;
+    opacity: 61%;
+}
+
+
