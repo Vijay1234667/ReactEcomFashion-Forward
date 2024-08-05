@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReactEcomSite/static/css/main.3cc33d01.css",
-    "main.js": "/ReactEcomSite/static/js/main.f3ad97b6.js",
+    "main.css": "/ReactEcomSite/static/css/main.0c06f49e.css",
+    "main.js": "/ReactEcomSite/static/js/main.690edd4b.js",
     "static/js/453.cfe7c5ff.chunk.js": "/ReactEcomSite/static/js/453.cfe7c5ff.chunk.js",
     "static/media/ProjectCard3.png": "/ReactEcomSite/static/media/ProjectCard3.9b3f7fb552ece5ea4148.png",
     "static/media/CosmeticsItem4.png": "/ReactEcomSite/static/media/CosmeticsItem4.32b005ca4e23a5585c6c.png",
@@ -80,12 +80,12 @@
     "static/media/galleryproduct8.jpg": "/ReactEcomSite/static/media/galleryproduct8.91f3b2a43e35a6328dc9.jpg",
     "static/media/AboutLeft1.webp": "/ReactEcomSite/static/media/AboutLeft1.608ba972ba9fae8c5376.webp",
     "index.html": "/ReactEcomSite/index.html",
-    "main.3cc33d01.css.map": "/ReactEcomSite/static/css/main.3cc33d01.css.map",
-    "main.f3ad97b6.js.map": "/ReactEcomSite/static/js/main.f3ad97b6.js.map",
+    "main.0c06f49e.css.map": "/ReactEcomSite/static/css/main.0c06f49e.css.map",
+    "main.690edd4b.js.map": "/ReactEcomSite/static/js/main.690edd4b.js.map",
     "453.cfe7c5ff.chunk.js.map": "/ReactEcomSite/static/js/453.cfe7c5ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cc33d01.css",
-    "static/js/main.f3ad97b6.js"
+    "static/css/main.0c06f49e.css",
+    "static/js/main.690edd4b.js"
   ]
 }
