@@ -1,9 +1,5 @@
 
-  
-.mySwiper2 img{
-  height: 400px !important;
-  width: 100%;
-}
+
 .mySwiper img{
   display: flex;
   margin-top: 10px;
@@ -14,7 +10,4 @@
   width: 25%;
   height: 100%;
   opacity: 0.4;
-}
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
 }

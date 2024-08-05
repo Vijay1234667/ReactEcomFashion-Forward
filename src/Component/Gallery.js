@@ -1,5 +1,4 @@
 import React from 'react'
-import Toptitlehead from './Toptitlehead'
 import { Container } from 'react-bootstrap-v5'
 
 import galleryproduct1 from './assets/galleryproduct1.jpg'
@@ -10,14 +9,18 @@ import galleryproduct5 from './assets/galleryproduct5.jpg'
 import galleryproduct6 from './assets/galleryproduct6.jpg'
 import galleryproduct7 from './assets/galleryproduct7.jpg'
 import galleryproduct8 from './assets/galleryproduct8.jpg'
+import BreadcrumbFixedTop from './BreadcrumbFixedTop';
 
 
 const GalleryPage = () => {
     return (
         <>
-            <Toptitlehead title="Gallery" />
+        <BreadcrumbFixedTop Title="Gallery" Subtitle="Gallary"/>
             <section className="gallery pt-3">
                 <Container>
+                   
+                        <h2 className='text-center fw-bold mb-4'>Gallery</h2>
+                    
                     <div className="row  gallery-content popup-view1">
                         <div className="col-12 col-md-6 col-lg-3 mb-3">
                             <a className="popup-view" href="homepageimages/product3.jpg">

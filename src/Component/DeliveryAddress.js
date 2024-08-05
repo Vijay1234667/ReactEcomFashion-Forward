@@ -5,63 +5,63 @@ import Deliveryaddresstopimg from './assets/Deliveryaddresstopimg.svg'
 const DeliveryAddressPage = () => {
     return (
         <>
-            <section class="Delivery-Address-Section">
-                <div class="container">
-                    <div class="text-center mb-4">
+            <section className="Delivery-Address-Section">
+                <div className="container">
+                    <div className="text-center mb-4">
                         <h1><span></span>Enter Your
                             Delivery Address</h1>
                     </div>
-                    <div class="row">
-                        <div class="form-body-content">
+                    <div className="row">
+                        <div className="form-body-content">
                             <form>
-                                <div class="col-md-6 shadow-section mx-auto p-3">
-                                    <div class="mb-3">
-                                        <label class="form-label">Full name</label>
-                                        <input type="text" placeholder='Full name' class="form-control" required/>
+                                <div className="col-md-6 shadow-section mx-auto p-3">
+                                    <div className="mb-3">
+                                        <label className="form-label">Full name</label>
+                                        <input type="text" placeholder='Full name' className="form-control" required/>
                                     </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Email</label>
-                                        <input type="email" placeholder='Enter Your Email' class="form-control" required/>
+                                    <div className="mb-3">
+                                        <label className="form-label">Email</label>
+                                        <input type="email" placeholder='Enter Your Email' className="form-control" required/>
                                     </div>
                               
-                                    <div class="mb-3">
-                                        <label class="form-label">Street address</label>
-                                        <input type="text" placeholder='Enter Your Street address'  class="form-control" required/>
+                                    <div className="mb-3">
+                                        <label className="form-label">Street address</label>
+                                        <input type="text" placeholder='Enter Your Street address'  className="form-control" required/>
                                     </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">Flat/Other(Optional)</label>
-                                        <input type="text" placeholder='Enter Your Flat/Other(Optional)' class="form-control" required/>
+                                    <div className="mb-3">
+                                        <label className="form-label">Flat/Other(Optional)</label>
+                                        <input type="text" placeholder='Enter Your Flat/Other(Optional)' className="form-control" required/>
                                     </div>
-                                    <div class="d-flex justify-content-between">
-                                        <div class="mb-3 col-md-5">
-                                            <label class="form-label" required>City</label>
-                                            <input type="text"placeholder='Enter Your City'  class="form-control"/>
+                                    <div className="d-flex justify-content-between">
+                                        <div className="mb-3 col-md-5">
+                                            <label className="form-label" required>City</label>
+                                            <input type="text"placeholder='Enter Your City'  className="form-control"/>
                                         </div>
-                                        <div class="mb-3 col-md-5">
-                                            <label class="form-label" required>Pincode</label>
-                                            <input type="text" placeholder='Enter Your Pincode' class="form-control"/>
+                                        <div className="mb-3 col-md-5">
+                                            <label className="form-label" required>Pincode</label>
+                                            <input type="text" placeholder='Enter Your Pincode' className="form-control"/>
                                         </div>
                                     </div>
-                                    <div class="mb-3">
-                                        <label class="form-label">State</label>
-                                        <select class="form-select" id="country" name="country">
+                                    <div className="mb-3">
+                                        <label className="form-label">State</label>
+                                        <select className="form-select" id="country" name="country">
                                             <option value="AF">Maharashtra</option>
                                             <option value="AX">Goa</option>
                                             <option value="AX">Rajasthan</option>
                                         </select>
                                     </div>
-                                    <div class="mb-3 text-center">
-                                        <input href="#paymentform" type="submit" value="Continue to payment" class="btn Google-btn"/>
+                                    <div className="mb-3 text-center">
+                                        <input href="#paymentform" type="submit" value="Continue to payment" className="btn Google-btn"/>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="delivery-absoluteimg d-none d-md-block">
-                        <img class="img-fluid" src={Deliveryaddresstopimg} alt="" width="420px"/>
+                    <div className="delivery-absoluteimg d-none d-md-block">
+                        <img className="img-fluid" src={Deliveryaddresstopimg} alt="" width="420px"/>
                     </div>
-                    <div class="delivery-absoluteimgleft d-none d-md-block">
-                        <img class="img-fluid" src={LoginAbsoluteImg} alt="" width="420px"/>
+                    <div className="delivery-absoluteimgleft d-none d-md-block">
+                        <img className="img-fluid" src={LoginAbsoluteImg} alt="" width="420px"/>
                     </div>
                 </div>
             </section>

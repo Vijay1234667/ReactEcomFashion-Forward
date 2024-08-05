@@ -21,7 +21,7 @@ const CosmeticsSalesSection = () => {
                                             See all Sunglasses and get 10% off at all Sunglasses
                                         </p>
                                         <div className="glasses-btn">
-                                            <a href="/" className="btn">SHOP BY GLASSES</a>
+                                            <a href="/" className="orange-btn-btn">SHOP BY GLASSES</a>
                                         </div>
                                     </div>
                             </div>
@@ -34,7 +34,7 @@ const CosmeticsSalesSection = () => {
                                         Buy Cosmetics products and get 30% off at all Cosmetics
                                     </p>
                                     <div className="Cosmetics-btn">
-                                        <a href="/" className="btn">SHOP BY Cosmetics </a>
+                                        <a href="/" className="orange-btn-btn">SHOP BY Cosmetics </a>
                                     </div>
                                 </div>
                                 <span className="sale-position">-80%</span>
@@ -70,7 +70,7 @@ const CosmeticsSalesSection = () => {
                                             On All Electronic
                                         </p>
                                         <div className="hurry-up-btn">
-                                            <a href="/" className="btn">HURRY UP!</a>
+                                            <a href="/" className="orange-btn-btn">HURRY UP!</a>
                                         </div>
                                     </div>
                             </div>

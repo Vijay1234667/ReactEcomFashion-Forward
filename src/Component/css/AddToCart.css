@@ -1,72 +1,74 @@
 .add-to-bag-main-page {
   padding: 20px 0px 20px;
 }
-.add-to-bag-body-content .title-top-para {
-  letter-spacing: 1px;
+.add-to-bag-main-page p {
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #41415afa;
 }
 
+.add-to-bag-main-page h5 {
+  font-size: 19px;
+  line-height: 1.8;
+  font-weight: 600;
+  color: rgba(101, 33, 24, 0.907);
+}
 .add-to-carts-featured-products-sizes-btn ul li {
   margin-right: 6px;
 }
-.types-of-delivery-section a {
-  color: #04aa6d;
-  font-size: 13px;
-  font-weight: 500;
+.h6color{
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  color: black;
+  font-weight: 600;
 }
-.pincode-input a {
-  color: #256a8f;
-  font-size: 14px;
-  font-weight: 400;
+.QuantitySection .btn{
+  background-color: black;
+  border: 1px solid black;
+  outline: 1px solid black;
+  padding: 3px 13px;
+  border-radius: 0px;
+  color: white;
+  outline-offset: 2px;
 }
 .add-to-carts-featured-products-sizes-btn .btn {
   display: flex;
-  border-radius: 2px;
-  padding: 6px 10px;
+  border-radius: 0px;
   margin-right: 4px;
+  width: 40px;
   justify-content: center;
   align-items: center;
-  background-color: #256a8f;
+  border: 1px solid black;
+  outline: 1px solid black;
+  outline-offset: 1px;
+  color: black;
+}
+.add-to-carts-featured-products-sizes-btn .btn:hover {
+  background-color: black;
   color: white;
+  transition: 0.2s ease-in-out;
 }
 
 .add-to-carts-featured-products-add-tobag-whishlist-btn .btn {
-  background-color: #256a8f;
+  background-color: rgb(228, 81, 36);
+  outline-offset: 2px;
+  outline: 2px solid black;
   color: white;
   font-size: 15px;
+  text-transform: uppercase;
   border-radius: 0px;
   letter-spacing: 0.2px;
   font-weight: 400;
 }
-.write-review-btn .btn {
-  padding: 7px 16px;
-  color: white;
-  background-color: #256a8f;
-  border-radius: 1px;
-}
-
-
-.add-to-cart-reviews-form-section input {
-  font-size: 15px;
-  padding: 10px;
-  letter-spacing: 0.5px;
-  border-radius: 3px;
-  font-weight: 400;
-}
-.add-to-cart-reviews-form-section label {
-  color: #000;
-}
-.reviews-submit-btn input {
-  background-color: #256a8f;
-  border-radius: 1px;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 6px 16px;
-  color: white;
+.add-to-carts-featured-products-add-tobag-whishlist-btn .btn:hover {
+  background-color: white;
+  color: black;
+  transition: 0.2s ease-in-out;
 }
 .choose-color a {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
+  width: 35px;
+  height: 30px;
+  border-radius: 0%;
   margin-right: 6px;
 }
-

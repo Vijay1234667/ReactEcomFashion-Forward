@@ -5,52 +5,56 @@ import Home from '../src/Component/Home'
 import AboutUs from '../src/Component/AboutUs'
 import Blogs from '../src/Component/Blogs'
 import Portfolio from '../src/Component/Portfolio'
-import Cart from '../src/Component/Cart';
 import Faq from '../src/Component/Faq';
-import SignUp from '../src/Component/SignUp';
 import Gallery from '../src/Component/Gallery';
 import Profile from '../src/Component/Profile';
 import Projects from '../src/Component/Projects';
-import AddToCart from '../src/Component/AddToCart';
 import ContactUs from '../src/Component/ContactUs';
 import PaymentForm from '../src/Component/PaymentForm';
 import FilterCategory from './Component/FilterCategory'
-import OurTeam from '../src/Component/OurTeam';
 import PaymentSuccessfull from '../src/Component/PaymentSuccessfull';
 import LoginPage from '../src/Component/LoginPage';
 import DeliveryAddress from '../src/Component/DeliveryAddress';
-import Categories from '../src/Component/Categories';
 import Privacy from '../src/Component/Privacy';
 import TermsCondition from '../src/Component/TermsCondition';
 import Footer from '../src/Component/Footer'
+import SingleProduct from './Component/SingleProduct';
+import ErrorPage from './Component/ErrorPage';
+import Crud from './Component/Crud';
+import Add from './Component/Add';
+import Update from './Component/Update';
+import CartsSingleProduct from './Component/CartsSingleProduct';
+
 
 function App() {
+
   return (
     <>
       <Router>
       <Navbar />
       <Routes>
-      <Route path="/" element={<Home />}/>
+      <Route path="/" element={<Home/>}/>
       <Route path="/about" element={<AboutUs />}/>
+      <Route path="/crud" element={<Crud />}/>
+      <Route path="/create" element={<Add/>}/>
       <Route path="/blogs" element={<Blogs />}/>
       <Route path="/portfolio" element={<Portfolio />}/>
-      <Route path="/cart" element={<Cart />}/>
       <Route path="/faq" element={<Faq/>}/>
-      <Route path="/signup" element={<SignUp/>}/>
       <Route path="/profile" element={<Profile/>}/>
-      <Route path="/ourteam" element={<OurTeam/>}/>
       <Route path="/login" element={<LoginPage/>}/>
       <Route path="/filtercategory" element={<FilterCategory/>}/>
-      <Route path="/addtocart" element={<AddToCart/>}/>
       <Route path="/gallery" element={<Gallery/>}/>
       <Route path="/projects" element={<Projects/>}/>
       <Route path="/paymentsuccessfull" element={<PaymentSuccessfull/>}/>
       <Route path="/deliveryaddress" element={<DeliveryAddress/>}/>
       <Route path="/paymentform" element={<PaymentForm/>}/>
       <Route path="/contactus" element={<ContactUs/>}/>
-      <Route path="/categories" element={<Categories/>}/>
       <Route path="/privacy" element={<Privacy/>}/>
       <Route path="/terms" element={<TermsCondition/>}/>
+      <Route path="/singleproduct/:id" element={<SingleProduct/>}/>
+      <Route path="/cartsingleproduct/:id" element={<CartsSingleProduct/>}/>
+      <Route path="/update/:id" element={<Update/>}/>
+      <Route path="*" element={<ErrorPage/>}/>
       </Routes>
       <Footer/>
     </Router>

@@ -1,89 +1,245 @@
-import './css/About.css';
+import React from 'react'
 
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import BreadcrumbFixedTop from './BreadcrumbFixedTop';
 
+import { Container } from 'react-bootstrap-v5'
+import AboutTeamCard from './AboutTeamCard';
+
+import PhoneIcon from '@mui/icons-material/Phone';
+import AddLocationAltOutlinedIcon from '@mui/icons-material/AddLocationAltOutlined';
+
+import Vanessalaird from './assets/Vanessalaird.jpg'
+import IreaEvans from './assets/IreaEvans.jpg'
+import MasonCampbell from './assets/MasonCampbell.jpg'
+import KavyaMalkova from './assets/KavyaMalkova.jpg'
+import EvaMendes from './assets/EvaMendes.jpg'
+import OliviaTaylor from './assets/OliviaTaylor.jpg'
+import AboutLeft1 from './assets/AboutLeft1.webp'
+import AboutLeft2 from './assets/AboutLeft2.webp'
+import AboutLeft3 from './assets/AboutLeft3.webp'
+import AboutLeft4 from './assets/AboutLeft4.webp'
 import AboutPerson from './assets/AboutPerson.jpg'
-function AboutPage() {
+import ourteemcircleimg from './assets/ourteemcircleimg.png'
+import AboutFirstRoundedImg from './assets/AboutFirstRoundedImg.jpg'
+
+
+import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
+import MobileScreenShareIcon from '@mui/icons-material/MobileScreenShare';
+import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
+import PhoneIphoneOutlinedIcon from '@mui/icons-material/PhoneIphoneOutlined';
+
+import HomeNewslaterSection from './HomeNewslaterSection';
+
+
+const AboutPage = () => {
     return (
         <>
-            <section className="About-us-Page-Section">
-                <div className="container">
-                    <div className="row justify-content-around">
-                        <div className="col-lg-5">
-                            <div className="form-body-content">
-                                <h5>Interested in working together? Let’s talk. Just Say Hi!</h5>
-                                <div className="mb-3">
-                                    <label for="exampleFormControlInput1" className="form-label">What’s your name</label>
-                                    <input  type="email" placeholder="Name" className="form-control"
-                                        id="exampleFormControlInput1" required />
+            <BreadcrumbFixedTop Title="About" Subtitle="About" />
+            <section className='About-us-Page-Section'>
+                <section className='Aboutus-Our-Shop'>
+                    <Container>
+                        <div className="row justify-content-center align-items-center md-mb-5 mb-4">
+                            <div className="col-lg-6 mb-4 mb-md-0">
+                                <div>
+                                    <img className='img-fluid rounded-tp-full' src={AboutFirstRoundedImg} alt="" />
                                 </div>
-                                <div className="mb-3">
-                                    <label for="exampleFormControlInput1" className="form-label">Email Address</label>
-                                    <input  type="email" className="form-control" placeholder="Email"
-                                        id="exampleFormControlInput1" required/>
-                                </div>
-                                <div className="mb-3">
-                                    <label for="exampleFormControlTextarea1" className="form-label">Example textarea</label>
-                                    <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-
-                                <div className="mb-3">
-                                    <a href="/" type='submit' className="btn Contact-btn">Contact Me</a>
+                            </div>
+                            <div className="col-lg-6">
+                                <div className='About-Our-Shop'>
+                                    <h5>OUR SHOP</h5>
+                                    <h6>Focusing on Quality
+                                        Material, Good Design</h6>
+                                    <p className='text-paragraph'>
+                                        Donec non interdum nisl. Sed ut est ac lacus sodales convallis. Nam non velit justo. Mauris vel ultrices tortor. Proin bibendum magna porttitor porttitor suscipit. Praesent sit amet consequat eros. Quisque ullamcorper ornare vulputate. Nam sodales sem id diam sollicitudin, id lobortis tellus tincidunt.
+                                    </p>
+                                    <div className='d-flex  align-items-center mb-4'>
+                                        <div>
+                                            <PhoneIcon className='fs-3' />
+                                        </div>
+                                        <div className='ms-3'>
+                                            <h4>Phone</h4>
+                                            <a href="">+91 (536)-(222)-(8892)</a>
+                                        </div>
+                                    </div>
+                                    <div className='d-flex'>
+                                        <div>
+                                            <AddLocationAltOutlinedIcon className='fs-3' />
+                                        </div>
+                                        <div className='ms-3'>
+                                            <h4>Location</h4>
+                                            <a href="">View on Google map</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-5 ">
-                            <div className="about-right-section">
-                                <div className="mb-3">
-                                    <img className="img-fluid rounded-circle" src={AboutPerson} alt=""
-                                        width="70px"/>
-                                </div>
-                                <div className="mb-3">
-                                    <h3>John Carter</h3>
-                                    <p>Head of Engineering at Google</p>
-                                </div>
-                                <div className="d-flex align-items-baseline mb-2">
-                                    <div>
-                                        <a href="/"><i className="fa-solid fa-location-dot fs-5"></i></a>
-                                    </div>
-                                    <div className="ms-3">
-                                        <h5>Address:</h5>
-                                        <p>1802 Ruckman RoadOklahoma City, OK 73116</p>
-                                    </div>
-                                </div>
-                                <div className="d-flex align-items-baseline">
-                                    <div>
-                                        <a href="/"><i className="fa-solid fa-phone fs-5 text-success"></i></a>
-                                    </div>
-                                    <div className="ms-3">
-                                        <h5>Phone:</h5>
-                                        <p>+91 9137168732</p>
-                                    </div>
-                                </div>
-                                <div className="d-flex align-items-baseline">
-                                    <div>
-                                        <a href="/"><i className="fa-solid fa-envelope fs-5 text-danger"></i></a>
-                                    </div>
-                                    <div className="ms-3">
-                                        <h5>Email</h5>
-                                        <p>Onlne@gmail.com</p>
-                                    </div>
+                    </Container>
+                </section>
+
+                <section className='AboutIcons-Section'>
+                    <Container>
+                        <div className="row g-3  justify-content-evenly text-center mb-5">
+                            <div className='col-md-2 col-6 About-portfolio-card'>
+                                <IntegrationInstructionsIcon className='mb-3 fs-1' />
+                                <div>
+                                    <h4>Ui/US Design</h4>
                                 </div>
                             </div>
-                            <ul className="About-us-social">
-                                <li><FacebookOutlinedIcon/></li>
-                                <li><TwitterIcon/></li>
-                                <li><LinkedInIcon/></li>
-                                <li><InstagramIcon/></li>
-                            </ul>
+                            <div className='col-md-2 col-6 About-portfolio-card'>
+                                <MobileScreenShareIcon className='mb-3 fs-1' />
+                                <div>
+                                    <h4 className='text-nowrap'>Web Development
+                                    </h4>
+                                </div>
+                            </div>
+                            <div className='col-lg-2 col-6 About-portfolio-card'>
+                                <PhoneIphoneOutlinedIcon className='mb-3 fs-1' />
+                                <div>
+                                    <h4>Mobile Apps</h4>
+                                </div>
+                            </div>
+                            <div className='col-lg-2 col-6 About-portfolio-card'>
+                                <SearchOutlinedIcon className='mb-3 fs-1' />
+                                <div>
+                                    <h4>SEO</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </Container>
+                </section>
+
+                <section className='AboutUs-Our-Work-Section'>
+                    <Container>
+                        <h2 className='text-center mb-5' >OUR WORKS</h2>
+                        <div className="row flex-column-reverse flex-md-row  justify-content-center align-items-center  mb-5">
+                            <div className="col-lg-4">
+                                <div>
+                                    <img className='img-fluid mb-3' src={AboutLeft1} alt="" />
+                                </div>
+                            </div>
+                            <div className="Aboutus-Two-Cards-Section col-lg-4 mb-3">
+                                <h6>Web Design</h6>
+                                <h3>Cassette tape</h3>
+                                <p className='mb-3 text-paragraph'>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.  iusto quae architecto aspernatur repellendus?
+                                </p>
+                                <div className='d-flex'>
+                                    <img src={AboutPerson} alt="" />
+                                    <div className='ms-3'>
+                                        <h5>Jamie Jonson</h5>
+                                        <span>Avo.com</span>
+                                    </div>
+                                </div>
+                                <div className='mt-4'>
+                                    <button className='btn'>VIEW PORTFOLIO</button>
+                                </div>
+                            </div>
                         </div>
 
-                    </div>
-                </div>
+                        <div className="row  justify-content-center align-items-center mb-5">
+                            <div className="Aboutus-Two-Cards-Section col-lg-4 mb-3 ">
+                                <h6>Application</h6>
+                                <h3>Miniwall Clock</h3>
+                                <p className='mb-3 text-paragraph'>
+                                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                </p>
+                                <div className='d-flex'>
+                                    <img src={EvaMendes} alt="" />
+                                    <div className='ms-3'>
+                                        <h5>Jamie Jonson</h5>
+                                        <span>Avo.com</span>
+                                    </div>
+                                </div>
+                                <div className='mt-4'>
+                                    <button className='btn'>VIEW PORTFOLIO</button>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4">
+                                <div>
+                                    <img className='img-fluid' src={AboutLeft2} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row flex-column-reverse flex-md-row justify-content-center align-items-center mb-5">
+                            <div className="col-lg-4">
+                                <div>
+                                    <img className='img-fluid' src={AboutLeft3} alt="" />
+                                </div>
+                            </div>
+                            <div className="Aboutus-Two-Cards-Section col-lg-4 mb-3">
+                                <h6>Web Design</h6>
+                                <h3>Avo Portfolio </h3>
+                                <p className='mb-3 text-paragraph'>
+                                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                </p>
+                                <div className='d-flex'>
+                                    <img src={MasonCampbell} alt="" />
+                                    <div className='ms-3'>
+                                        <h5>Jamie Jonson</h5>
+                                        <span>Avo.com</span>
+                                    </div>
+                                </div>
+                                <div className='mt-4'>
+                                    <button className='btn'>VIEW PORTFOLIO</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row justify-content-center align-items-center mb-5">
+                            <div className="Aboutus-Two-Cards-Section col-lg-4 mb-3">
+                                <h6>Web Development</h6>
+                                <h3>Hand Writing</h3>
+                                <p className='mb-3 text-paragraph'>
+                                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
+                                </p>
+                                <div className='d-flex'>
+                                    <img src={IreaEvans} alt="" />
+                                    <div className='ms-3'>
+                                        <h5>Jamie Jonson</h5>
+                                        <span>Avo.com</span>
+                                    </div>
+                                </div>
+                                <div className='mt-4'>
+                                    <button className='btn'>VIEW PORTFOLIO</button>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4">
+                                <div>
+                                    <img className='img-fluid' src={AboutLeft4} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </Container>
+                </section>
+
+                <section className="our-team-section">
+                    <Container>
+                        <div className="our-team-section-top-content text-center mb-5">
+                            <h2>Dedicated & Passionate Team</h2>
+                            <img src={ourteemcircleimg} width={200} alt="" />
+                            <p className='text-paragraph'>
+                                Meet the Slick's crew - a dedicated and passionate team who wants to improve <br /> your experience of creating websites.
+                            </p>
+                            <div className="hire-team-btn">
+                                <a href="/" className="btn">HIRE OUR TEAM</a>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <AboutTeamCard MemberImg={Vanessalaird} MemberName="Vanessa laird" MemberDesignation="CEO" MemberEmail="@vanessalaird" />
+                            <AboutTeamCard MemberImg={IreaEvans} MemberName="Irea Evans" MemberDesignation="DIRECTOR" MemberEmail="@ireaevans" />
+                            <AboutTeamCard MemberImg={MasonCampbell} MemberName="Mason Campbell" MemberDesignation="MANAGER" MemberEmail="masoncampbell" />
+                            <AboutTeamCard MemberImg={KavyaMalkova} MemberName="Kavya Malkova" MemberDesignation="FRONT END CODER" MemberEmail="natashamalkova" />
+                            <AboutTeamCard MemberImg={EvaMendes} MemberName="Eva Mendes" MemberDesignation="BACK END GENIE" MemberEmail="evamendes" />
+                            <AboutTeamCard MemberImg={OliviaTaylor} MemberName="Olivia Taylor" MemberDesignation="HAPPINESS ENGINEER" MemberEmail="oliviataylor" />
+                        </div >
+                    </Container >
+                </section>
+                <section>
+                    <HomeNewslaterSection />
+                </section>
             </section>
+
         </>
     );
 }

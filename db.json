@@ -2,18 +2,18 @@
   "cardata": [
     {
       "id": "1",
-      "ProductName": "Men T-Shirt",
+      "ProductName": "Women T-Shirt",
       "ProductPrice": 7000,
       "ProductInfo1": "4K+ viewed in past month",
-      "Discount": "NEW",
+      "Discount": "20%",
       "color": "blue",
-      "category": "Men",
+      "category": "Women",
       "Size": "XXL",
       "Brands": "H&M",
       "featured": "true",
       "Availability": "In stock",
       "image": "img-hover7.JPG",
-      "LeftCardImg": "GooglesImg3.PNG"
+      "LeftCardImg": "img-hover7.JPG"
     },
 
     {
@@ -31,7 +31,7 @@
       "image": "img5_1.JPG",
       "LeftCardImg": "Watchimg1.png"
     },
-
+    
     {
       "id": "3",
       "ProductName": "Women",
@@ -167,7 +167,6 @@
       "image": "S11.WEBP",
       "LeftCardImg": "https://ik.imagekit.io/gku4adhog/air1.jpg?updatedAt=1718089268823"
     },
-
     {
       "id": "12",
       "ProductName": "men",

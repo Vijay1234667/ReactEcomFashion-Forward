@@ -1,118 +1,76 @@
-import MenuIcon from '@mui/icons-material/Menu';
-import SearchIcon from '@mui/icons-material/Search';
-import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
-import {  Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import ELOGOS from './assets/ELOGOS.png'
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
 function NavBar() {
+
+
     return (
         <>
-            <section className="navbar-section">
+            <section className="navbar-section d-none d-md-block">
                 <div className="container">
-                    <div className="d-flex justify-content-between">
-                        <a className="fs-3 hammer" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                            aria-controls="offcanvasExample">
-                            <MenuIcon/>
-                        </a>
+                    <div className="d-flex justify-content-between align-items-baseline">
                         <div className="nav-sign-btn">
-                            <a href="index.html" className=""><img src="https://ik.imagekit.io/gku4adhog/first-fly-travel/Delta.svg?updatedAt=1714385080148" alt="logo" width="90px" /></a>
+                            <a href="index.html" className=""><img src={ELOGOS} alt="logo" width="200px" /></a>
                         </div>
-                        <div className="nav-sign-btn">
-                            <Link to="login" className="btn">Login</Link>
-                            <Link to="signup" className="btn ms-3">Register</Link>
-                        </div>
-                    </div>
-                    <div className="offcanvas  offcanvas-start" tabindex="-1" id="offcanvasExample"
-                        aria-labelledby="offcanvasExampleLabel">
-                        <div className="offcanvas-header">
-                            <h5 className="offcanvas-title" id="offcanvasExampleLabel"><a href="/"><SearchIcon/></a></h5>
-                            <button type="button" className="btn-close " data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
-                        </div>
-                        <div className="offcanvas-body">
-                            <div className="mb-3 border-2  d-flex align-items-center">
-                                <img className="img-fluid rounded-circle" src="" alt="shopimage" width="100px" />
-                                <div className="text-white  profile-owner ms-2">
-                                    <h4>Personal Account</h4>
-                                    <span>Personal Account</span>
-                                </div>
+                        <ul className="navbar-bottom-nav">
+                            <div className="d-flex mx-auto">
+                                <li>
+                                    <NavLink to="/">Home</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="about">About Us</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="contactus">Contact</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="filtercategory">Product</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="/cartsingleproduct/:id">Cart</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="blogs">Blogs</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink to="faq">FAQ's</NavLink>
+                                </li>
                             </div>
-                            <div className="view-site-or-profile">
-                                <h5 className="">View site / profile</h5>
+                        </ul>
+                        <div className="nav-sign-btn d-flex">
+                            <div>
+                                <NavLink to="login" className='btn'>LOGIN</NavLink>
                             </div>
-                            <ul className="p-0">
-                                <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="profile.html">Profile</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="About-Us.html">About-us</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="categories.html">Categeory</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="cart.html">Cart</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="Projects.html">Project</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="blog.html">Blog</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="Our-Team.html">Our Teem</a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="faq.html">FAQ's</a>
-                                </li>
-                            </ul>
-                            <ul className="offcanvas-social-icons p-0">
-                                <li>
-                                    <a href="/"><FacebookOutlinedIcon/></a>
-                                </li>
-                                <li>
-                                    <a href="/"><FacebookOutlinedIcon/></a>
-                                </li>
-                                <li>
-                                    <a href="/"><FacebookOutlinedIcon/></a>
-                                </li>
-                                <li>
-                                    <a href="/"><FacebookOutlinedIcon/></a>
-                                </li>
-                            </ul>
-                            <div className="offcanvas-left-call-btn">
-                                <a href="/" className="btn"><img className="img-fluid" src=""
-                                    alt="" width="50px" height="50px"/>Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <ul className="navbar-bottom-nav  border-top d-none d-md-flex ">
-                        <div className="d-flex mx-auto">
-                            <li>
-                                <Link to="/">Home</Link>
-                            </li>
-                            <li>
-                                <Link to="about">About Us</Link>
-                            </li>
-                            <li>
-                                <Link to="blogs">Blogs</Link>
-                            </li>
-                            <li>
-                                <Link to="projects">Projects</Link>
-                            </li>
-                            <li>
-                                <Link to="cart">Cart</Link>
-                            </li>
-                            <li>
-                                <Link to="faq">FAQ's</Link>
-                            </li>
-                        </div>
-                    </ul>
-                    <div className="text-center header-input-body mx-auto py-2 py-md-0">
-                        <input type="text" className="header-input" placeholder="Search Products Here" />
-                        <div className="header-input-body-glass">
-                            <a href="/" className="btn"><SearchIcon/></a>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section className="d-md-none">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </section>
         </>
     );

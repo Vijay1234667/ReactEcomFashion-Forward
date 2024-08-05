@@ -1,12 +1,16 @@
 import React from 'react'
-import Toptitlehead from './Toptitlehead'
+import { useEffect } from 'react'
 import { Container } from 'react-bootstrap-v5'
+import BreadcrumbFixedTop from './BreadcrumbFixedTop';
 
 const TermsConditionPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
-            <Toptitlehead title="Terms And Condition" />
-            <section className="Terms-And-Condition-Section">
+           <BreadcrumbFixedTop Title="Terms-And-Condition" Subtitle="Terms-And-Condition"/>
+            <section className="Terms-And-Condition-Section PrivacyAndTermsBody">
                 <Container>
                     <div className="Terms-And-Condition-Section-Body">
                         <div>

@@ -1,9 +1,10 @@
-import './css/Faq.css';
 import Accordion from 'react-bootstrap/Accordion';
+import BreadcrumbFixedTop from './BreadcrumbFixedTop';
 
 function FaqPage() {
     return (
         <>
+        <BreadcrumbFixedTop Title="Frequently asked questions" Subtitle="Faq"/>
             <section className="Faq-Section">
                 <div className="container">
                     <section className="mb-xl-9 mb-4">

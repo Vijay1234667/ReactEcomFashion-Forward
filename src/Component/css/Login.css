@@ -1,20 +1,27 @@
-
-.Login-Page-Section h1 {
-    font-weight: 700;
-    font-size: 26px;
-    color: #1877f2;
+.Login-Page-Section{
+    padding: 30px 0px 30px;
 }
-.form-body-content label {
-    font-weight: 500;
+.Login-Page-Section h2 {
+    font-weight: 600;
+    font-size: 26px;
+    color: black;
 }
 .form-body-content input {
     padding: 8px 10px;
     border: 1px solid green;
-    border-radius: 4px;
+    border-radius: 0px !important;
 }
-.form-body-content ::placeholder {
-  color: black;
+.Login-Page-left-content p{
+   font-size: 16px; 
+   line-height: 28px;
 }
+.Login-Page-left-content .btn{
+    background-color: #db1436;
+    color: white;
+    border-radius: 0px;
+    padding: 9px 20px;
+}
+
 .Login-Page-Section .sign-btn {
     background-color:#1877f2;
     width: 100%;
@@ -58,9 +65,9 @@
 }
 .loginabsoluteright-absolute-image{
     position: absolute;
-    top: 100%;
-    right: 11%;
-    opacity: 61%;
+    top: 90%;
+    left: 40px;
+  
 }
 
 

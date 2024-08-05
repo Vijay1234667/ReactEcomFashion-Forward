@@ -1,30 +1,26 @@
 import CosmeticsSalesSection from "./CosmeticsSalesSection";
-import DiscoverLatestOffer from "./DiscoverLatestOffer";
+import HomeBannerPage from "./HomeBannerPage";
 import HomeBrandCompany from "./HomeBrandCompany";
-import HomeElectronicSection from "./HomeElectronicSection";
 import HomeMainProductSection from "./HomeMainProductSection";
 import HomeNewslaterSection from "./HomeNewslaterSection";
 import HomeParallaxSection from "./HomeParallaxSection";
-import HomeProductCaption from "./HomeProductCaption";
 import HomeSection1 from "./HomeSection1";
 import HomeSection3 from "./HomeSection3";
-import HomeTrendingSection from "./HomeTrendingSection";
+import TopCategory from "./TopCategory";
 
 function HomePage() {
     return (
         <>
-            <HomeSection1 />
-            {/* <HomeSection2/> */}
+             <HomeSection1 />
+            <HomeBannerPage />
             <HomeSection3 />
-            <HomeProductCaption />
             <HomeMainProductSection />
-            <DiscoverLatestOffer />
-            <HomeElectronicSection />
             <HomeParallaxSection />
+            <TopCategory />
             <CosmeticsSalesSection />
-            <HomeTrendingSection />
-            <HomeNewslaterSection />
             <HomeBrandCompany />
+            <HomeNewslaterSection />
+
         </>
     );
 }

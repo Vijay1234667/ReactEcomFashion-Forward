@@ -1,71 +1,136 @@
 import React from 'react'
 import './css/Home.css';
+import { Container } from 'react-bootstrap-v5';
+import { Link } from 'react-router-dom';
 
-import appliance from './assets/appliance.png'
-import electronic from './assets/electronic.png'
-import grocery from './assets/grocery.png'
-import fashion from './assets/fashion.png'
-import toy from './assets/toy.png'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
+import { Pagination, Navigation } from 'swiper/modules';
+
+import cmen from './assets/cmen.jpg'
+import cwomen from './assets/cwomen.jpg'
+import cwatch from './assets/cwatch.jpg'
+import ckid from './assets/ckid.jpg'
+import csports from './assets/csports.jpg'
+import csunglass from './assets/csunglass.jpg'
+import cbag from './assets/cbag.jpg'
+import cshoes from './assets/cshoes.jpg'
 
 
 const HomeSection1 = () => {
     return (
         <>
-            <section class="banner-product-all-categories  animate__animated animate__backInLeft">
-                <div class="container">
-                    <div class="banner-product-all-categories-main-body mt-2 shadow rounded">
-                        <div class="row text-center">
+            <section className="banner-product-all-categories mb-5 pt-3">
+                <Container>
+                    <div className="banner-product-all-categories-main-body mt-2">
+                        <h4 className='mb-3 h4color'>Shop By Category</h4>
+                        <p className='text-paragraph'>Shop the latest products from the most popular collections</p>
+                        <div className="row text-center ">
+                            <Swiper
+                                slidesPerView={6}
+                                loop={true}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                navigation={true}
+                                modules={[Pagination, Navigation]}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide>
+                                    <div className="categories-brand">
+                                        <Link to="filtercategory">
+                                            <div>
+                                                <img className="img-fluid mb-2" src={cmen} alt="ShopImage" />
+                                                <h6 className='h6color'>Men</h6>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </SwiperSlide>
 
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="categories-brand">
-                                    <a href="/"><img class="img-fluid mb-2" src={appliance} alt="ShopImage"
-                                        width="60" /></a>
-                                    <h6>Mobile & Tablets</h6>
-                                </div>
-                            </div>
+                                <SwiperSlide>
+                                    <div className="categories-brand">
+                                        <Link to="/filtercategory">
+                                            <div>
+                                                <img className="img-fluid mb-2" src={cwomen} alt="ShopImage" />
+                                                <h6 className='h6color'>Women</h6>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </SwiperSlide>
 
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="categories-brand">
-                                    <a href="/"><img class="img-fluid mb-2 " src={electronic} alt="ShopImage"
-                                        width="60" /></a>
-                                    <h6>Electronics</h6>
-                                </div>
-                            </div>
+                                <SwiperSlide>
+                                    <div className="categories-brand">
+                                        <Link to="/filtercategory">
+                                            <div>
+                                                <img className="img-fluid mb-2" src={cwatch} alt="ShopImage" />
+                                                <h6 className='h6color'>Watches</h6>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </SwiperSlide>
 
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="categories-brand">
-                                    <a href="/"><img class="img-fluid mb-2 " src={fashion} alt="ShopImage"
-                                        width="60" /></a>
-                                    <h6>Fashion</h6>
-                                </div>
-                            </div>
+                                <SwiperSlide>
+                                    <div className="categories-brand">
+                                        <Link to="/filtercategory">
+                                            <div>
+                                                <img className="img-fluid mb-2" src={ckid} alt="ShopImage" />
+                                                <h6 className='h6color'>Kids</h6>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </SwiperSlide>
 
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="categories-brand">
-                                    <a href="/"><img class="img-fluid mb-2" src={toy} alt="ShopImage"
-                                        width="60" /></a>
-                                    <h6>Toys</h6>
-                                </div>
-                            </div>
+                                <SwiperSlide>
+                                    <div className="categories-brand">
+                                        <Link to="/filtercategory">
+                                            <div>
+                                                <img className="img-fluid mb-2" src={csports} alt="ShopImage" />
+                                                <h6 className='h6color'>Sports</h6>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </SwiperSlide>
 
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="categories-brand">
-                                    <a href="/"><img class="img-fluid mb-2" src={appliance} alt="ShopImage"
-                                        width="60" /></a>
-                                    <h6>Home & Kitchen</h6>
-                                </div>
-                            </div>
+                                <SwiperSlide>
+                                    <div className="categories-brand">
+                                        <Link to="/filtercategory">
+                                            <div>
+                                                <img className="img-fluid mb-2" src={csunglass} alt="ShopImage" />
+                                                <h6 className='h6color'>Sunglass</h6>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </SwiperSlide>
 
-                            <div class="col-lg-2 col-md-4 col-6">
-                                <div class="categories-brand">
-                                    <a href="/"><img class="img-fluid mb-2" src={grocery} alt="ShopImage"
-                                        width="60" /></a>
-                                    <h6>Grocery</h6>
-                                </div>
-                            </div>
+                                <SwiperSlide>
+                                    <div className="categories-brand">
+                                        <Link to="/filtercategory">
+                                            <div>
+                                                <img className="img-fluid mb-2" src={cshoes} alt="ShopImage" />
+                                                <h6 className='h6color'>Shoes</h6>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </SwiperSlide>
+
+                                <SwiperSlide>
+                                    <div className="categories-brand">
+                                        <Link to="/filtercategory">
+                                            <div>
+                                                <img className="img-fluid mb-2" src={cbag} alt="ShopImage" />
+                                                <h6 className='h6color'>Bag</h6>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </SwiperSlide>
+                                
+                            </Swiper>
                         </div>
                     </div>
-                </div>
+                </Container>
             </section>
         </>
     )
