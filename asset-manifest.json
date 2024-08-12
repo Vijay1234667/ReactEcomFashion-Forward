@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactEcomFashion-Forward/static/css/main.9da4634b.css",
-    "main.js": "/ReactEcomFashion-Forward/static/js/main.6ef22ea8.js",
+    "main.js": "/ReactEcomFashion-Forward/static/js/main.256a9e9f.js",
     "static/js/453.cfe7c5ff.chunk.js": "/ReactEcomFashion-Forward/static/js/453.cfe7c5ff.chunk.js",
     "static/media/ProjectCard3.png": "/ReactEcomFashion-Forward/static/media/ProjectCard3.9b3f7fb552ece5ea4148.png",
     "static/media/CosmeticsItem4.png": "/ReactEcomFashion-Forward/static/media/CosmeticsItem4.32b005ca4e23a5585c6c.png",
@@ -72,7 +72,6 @@
     "static/media/LoginAbsoluteImg.svg": "/ReactEcomFashion-Forward/static/media/LoginAbsoluteImg.60cc2473480d692d346ab599d32a04f2.svg",
     "static/media/b4img.jpg": "/ReactEcomFashion-Forward/static/media/b4img.64b088ee94196d5078e2.jpg",
     "static/media/b3img.jpg": "/ReactEcomFashion-Forward/static/media/b3img.20b4880d898fe61ff353.jpg",
-    "static/media/csports.jpg": "/ReactEcomFashion-Forward/static/media/csports.606d73f51199cff6ec9e.jpg",
     "static/media/cshoes.jpg": "/ReactEcomFashion-Forward/static/media/cshoes.c331b54bcc7dca049cdb.jpg",
     "static/media/cbag.jpg": "/ReactEcomFashion-Forward/static/media/cbag.7d29a63b9960062a43fa.jpg",
     "static/media/HomeBannerimg5.jpg": "/ReactEcomFashion-Forward/static/media/HomeBannerimg5.4fc5a3c6b597f581a012.jpg",
@@ -83,11 +82,11 @@
     "static/media/AboutLeft1.webp": "/ReactEcomFashion-Forward/static/media/AboutLeft1.608ba972ba9fae8c5376.webp",
     "index.html": "/ReactEcomFashion-Forward/index.html",
     "main.9da4634b.css.map": "/ReactEcomFashion-Forward/static/css/main.9da4634b.css.map",
-    "main.6ef22ea8.js.map": "/ReactEcomFashion-Forward/static/js/main.6ef22ea8.js.map",
+    "main.256a9e9f.js.map": "/ReactEcomFashion-Forward/static/js/main.256a9e9f.js.map",
     "453.cfe7c5ff.chunk.js.map": "/ReactEcomFashion-Forward/static/js/453.cfe7c5ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9da4634b.css",
-    "static/js/main.6ef22ea8.js"
+    "static/js/main.256a9e9f.js"
   ]
 }
