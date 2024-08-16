@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReactEcomFashion-Forward/static/css/main.9da4634b.css",
-    "main.js": "/ReactEcomFashion-Forward/static/js/main.256a9e9f.js",
+    "main.css": "/ReactEcomFashion-Forward/static/css/main.c7c2d25c.css",
+    "main.js": "/ReactEcomFashion-Forward/static/js/main.dbec3ea9.js",
     "static/js/453.cfe7c5ff.chunk.js": "/ReactEcomFashion-Forward/static/js/453.cfe7c5ff.chunk.js",
     "static/media/ProjectCard3.png": "/ReactEcomFashion-Forward/static/media/ProjectCard3.9b3f7fb552ece5ea4148.png",
     "static/media/CosmeticsItem4.png": "/ReactEcomFashion-Forward/static/media/CosmeticsItem4.32b005ca4e23a5585c6c.png",
@@ -40,6 +40,7 @@
     "static/media/blogfurniture1.jpg": "/ReactEcomFashion-Forward/static/media/blogfurniture1.7181bef8ded3e8576ba2.jpg",
     "static/media/HomeBannerimg2.jpg": "/ReactEcomFashion-Forward/static/media/HomeBannerimg2.d55c28fec999d032fb1b.jpg",
     "static/media/BlogsRightImg8.jpg": "/ReactEcomFashion-Forward/static/media/BlogsRightImg8.190d198f8787bee9260d.jpg",
+    "static/media/SALE1.png": "/ReactEcomFashion-Forward/static/media/SALE1.b72db8e67e3c96f295a1.png",
     "static/media/Homenewslaterbg.jpeg": "/ReactEcomFashion-Forward/static/media/Homenewslaterbg.5ca69ed1aa839103a3f2.jpeg",
     "static/media/Parallaxbg1.webp": "/ReactEcomFashion-Forward/static/media/Parallaxbg1.de19d5c838691c36fbc2.webp",
     "static/media/Parallaxbg3.webp": "/ReactEcomFashion-Forward/static/media/Parallaxbg3.ee294094dd32a9346c0f.webp",
@@ -81,12 +82,12 @@
     "static/media/Deliveryaddresstopimg.svg": "/ReactEcomFashion-Forward/static/media/Deliveryaddresstopimg.75032bc6da9f8b29b9df7108be65911b.svg",
     "static/media/AboutLeft1.webp": "/ReactEcomFashion-Forward/static/media/AboutLeft1.608ba972ba9fae8c5376.webp",
     "index.html": "/ReactEcomFashion-Forward/index.html",
-    "main.9da4634b.css.map": "/ReactEcomFashion-Forward/static/css/main.9da4634b.css.map",
-    "main.256a9e9f.js.map": "/ReactEcomFashion-Forward/static/js/main.256a9e9f.js.map",
+    "main.c7c2d25c.css.map": "/ReactEcomFashion-Forward/static/css/main.c7c2d25c.css.map",
+    "main.dbec3ea9.js.map": "/ReactEcomFashion-Forward/static/js/main.dbec3ea9.js.map",
     "453.cfe7c5ff.chunk.js.map": "/ReactEcomFashion-Forward/static/js/453.cfe7c5ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9da4634b.css",
-    "static/js/main.256a9e9f.js"
+    "static/css/main.c7c2d25c.css",
+    "static/js/main.dbec3ea9.js"
   ]
 }
