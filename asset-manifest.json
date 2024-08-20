@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ReactEcomFashion-Forward/static/css/main.04912851.css",
-    "main.js": "/ReactEcomFashion-Forward/static/js/main.63e4a2ee.js",
+    "main.js": "/ReactEcomFashion-Forward/static/js/main.093099e2.js",
     "static/js/453.cfe7c5ff.chunk.js": "/ReactEcomFashion-Forward/static/js/453.cfe7c5ff.chunk.js",
     "static/media/ProjectCard3.png": "/ReactEcomFashion-Forward/static/media/ProjectCard3.9b3f7fb552ece5ea4148.png",
     "static/media/CosmeticsItem4.png": "/ReactEcomFashion-Forward/static/media/CosmeticsItem4.32b005ca4e23a5585c6c.png",
@@ -83,11 +83,11 @@
     "static/media/AboutLeft1.webp": "/ReactEcomFashion-Forward/static/media/AboutLeft1.608ba972ba9fae8c5376.webp",
     "index.html": "/ReactEcomFashion-Forward/index.html",
     "main.04912851.css.map": "/ReactEcomFashion-Forward/static/css/main.04912851.css.map",
-    "main.63e4a2ee.js.map": "/ReactEcomFashion-Forward/static/js/main.63e4a2ee.js.map",
+    "main.093099e2.js.map": "/ReactEcomFashion-Forward/static/js/main.093099e2.js.map",
     "453.cfe7c5ff.chunk.js.map": "/ReactEcomFashion-Forward/static/js/453.cfe7c5ff.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04912851.css",
-    "static/js/main.63e4a2ee.js"
+    "static/js/main.093099e2.js"
   ]
 }
