@@ -758,6 +758,10 @@ h6{
 @media only screen and (max-width: 767px) {
   /****BREADCRUMB-FIXED-TOP-SECTION****/
 
+  h2 {
+    font-size: 20px;
+  }
+
   .BreadcrumbFixedTop {
     height: 180px;
     justify-content: center;

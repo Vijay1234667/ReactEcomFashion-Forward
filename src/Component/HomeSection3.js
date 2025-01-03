@@ -21,8 +21,6 @@ const HomeSection3 = () => {
       }, []);
 
 
-
-
     let time = new Date().toLocaleTimeString();
     const [ctime, setCtime] = useState(time);
 
@@ -31,9 +29,6 @@ const HomeSection3 = () => {
         setCtime(time);
     };
     setInterval(UpdateTime, 1000)
-
-
-
 
     return (
         <>
