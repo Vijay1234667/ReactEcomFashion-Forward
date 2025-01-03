@@ -1,20 +1,19 @@
 import React from 'react'
-import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 
 
-const BlogsRightCard = ({Image, PostName, Posttext}) => {
+const BlogsRightCard = ({Image, PostName, Posttext, Likes}) => {
     return (
         <>
-            <div className="card post-head mb-3 border-0 ">
-                <div className="row">
-                    <div className="col-3 inner">
+            <div className="post-head mb-2 md-mb-2">
+                <div className="row  py-1 border-bottom border-dark-subtle">
+                    <div className="col-4 inner">
                         <img className="img-fluid" src={Image} alt="shopimage" />
                     </div>
                     <div className="col-8">
                         <div className="card-body p-0">
-                            <h6>{PostName}</h6>
-                            <CalendarMonthIcon/>{Posttext}
+                            <h6>{PostName} <span className='d-block mt-2'>{Likes}</span></h6>
+                            <p className='post-head-orange-text'>{Posttext}</p>
                         </div>
                     </div>
                 </div>

@@ -17,31 +17,37 @@ import Homebrand6 from './assets/Homebrand6.jpg'
 const HomeBrandCompany = () => {
     return (
         <>
-            <section className="brand-company-section">
+            <section className="brand-company-section padding-all">
                 <div className="container">
                     <div className="text-center">
                         <h4 className="mb-2 h4color">Shop By Brands</h4>
                         <p className='text-paragraph'>Select Your Favorite Brands And Purchase</p>
                     </div>
                     <div className="row justify-content-center">
-                        <Swiper
-                            slidesPerView={3}
-                            loop={true}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            breakpoints={{
-                                576: {
-                                  slidesPerView: 5,
-                                },
-                                768: {
-                                  slidesPerView: 5,
-                                },
-                              }}
-                            navigation={true}
-                            modules={[Pagination, Navigation]}
-                            className="mySwiper"
-                        >
+                    <Swiper
+                                slidesPerView={6}
+                                loop={true}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                navigation={true}
+                                modules={[Pagination, Navigation]}
+                                className="mySwiper"
+                                breakpoints={{
+                                    0: {
+                                        slidesPerView: 3,
+                                    },
+                                    576: {
+                                        slidesPerView: 2,
+                                    },
+                                    768: {
+                                        slidesPerView: 3,
+                                    },
+                                    1024: {
+                                        slidesPerView: 6,
+                                    },
+                                }}
+                            >
                             <SwiperSlide>
                                 <img className="img-fluid" src={Homebrand1} alt="ShopImage" width="140px" />
                             </SwiperSlide>

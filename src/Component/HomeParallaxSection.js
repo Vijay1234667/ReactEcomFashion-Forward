@@ -24,19 +24,7 @@ const HomeParallaxSection = () => {
                                 <BlogsRightCard Image={blogfurniture3} PostName="Home Design Here" Posttext="11 December, 2022" />
                                 <BlogsRightCard Image={blogfurniture4} PostName="Home Design Here" Posttext="11 December, 2022" />
                                 <BlogsRightCard Image={blogfurniture5} PostName="Home Design Here" Posttext="11 December, 2022" />
-                                <div className="popular-tags h4color">
-                                    <h4 className="mb-3">Popular Tags</h4>
-                                    <ul className="p-0 ">
-                                        <li><a href="/">CLOTHS</a></li>
-                                        <li><a href="/">ELECTRONIC</a></li>
-                                        <li><a href="/">Furniture</a></li>
-                                        <li><a href="/">FURNITURE</a></li>
-                                        <li><a href="/">LAPTOP</a></li>
-                                        <li><a href="/">MEN WEAR</a></li>
-                                        <li><a href="/">TOP WEAR</a></li>
-                                        <li><a href="/">HEADPHONES</a></li>
-                                    </ul>
-                                </div>
+                             
                             </div>
                         </div>
 

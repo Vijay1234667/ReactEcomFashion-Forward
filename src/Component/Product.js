@@ -7,10 +7,10 @@ import SearchIcon from '@mui/icons-material/Search';
 import { Link } from 'react-router-dom';
 import { useProductContext } from './Context/ProductContext';
 
-
 const Product = (curElem) => {
+    
     const {base_url, public_url } = useProductContext();
-    const { id,  ProductName, ProductPrice, ProductInfo1, Discount, image } = curElem;
+    const { id, ProductName, ProductPrice, ProductInfo1, Discount, image } = curElem;
     return (
         <div className="col-lg-4 col-6 mb-3">
             <Link to={`/singleproduct/${id}`}>
@@ -20,7 +20,7 @@ const Product = (curElem) => {
                             alt="img" />
                     </div>
                     <div className="product-body text-center mb-2">
-                        <div className='d-flex  justify-content-between mt-2'>
+                        <div className='d-flex  justify-content-between align-items-baseline mt-2'>
                             <div className='mb-2 mb-md-0'>
                                 <span className="Home-product-items-name">{ProductName}</span>
                             </div>
@@ -45,6 +45,10 @@ const Product = (curElem) => {
                         <div className='Discount'>
                             <button className='btn'>{Discount}</button>
                         </div>
+                        <div className='product-main-ATC-btn'>
+                            <a href="" className='btn btn-dark w-100'>Add to Cart</a>
+                        </div>
+                        
                     </div>
                 </div>
             </Link>

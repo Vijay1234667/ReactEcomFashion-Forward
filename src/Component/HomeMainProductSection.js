@@ -7,13 +7,13 @@ import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 import { useProductContext } from './Context/ProductContext';
 import summersale from './assets/summersale.jpg'
 import HomeSaleimg from './assets/HomeSaleimg.jpg'
+import { Link } from 'react-router-dom';
 
 const HomeMainProductSection = () => {
-    const { isLoading, featureProducts, products } = useProductContext();
+    const { isLoading , products } = useProductContext();
     if (isLoading) {
         return <div>.......Loading</div>
     }
-
     return (
         <>
             <section className="main-wrapper-section">
@@ -25,7 +25,7 @@ const HomeMainProductSection = () => {
                             </div>
                             <div>
                                 {
-                                    featureProducts.slice(0, 5).map((curElem) => {
+                                    products.slice(0, 6).map((curElem) => {
                                         return <MainSmallCardItems key={curElem.id} {...curElem} />
                                     })}
                                 <div>
@@ -38,10 +38,8 @@ const HomeMainProductSection = () => {
                             <section className="product-cards mb-4">
                                 <div className="container">
                                     <div className='d-flex justify-content-between align-items-center mb-2'>
-                                        <div>
-                                            <h4 className='h4color'>Our Feature Product</h4>
-                                        </div>
-                                        <a href="#filtercategory" className='orange-btn-btn'>All Categeory < ManageSearchIcon /></a>
+                                            <h4>Our Feature Product</h4>
+                                        <Link to="/filtercategory" className='orange-btn-btn'>All Categeory < ManageSearchIcon /></Link>
                                     </div>
 
                                     <div className="row">

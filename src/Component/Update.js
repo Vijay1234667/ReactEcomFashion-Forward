@@ -35,90 +35,90 @@ const  navigate = useNavigate()
                     <div className="col-lg-5 mx-auto">
                         <form action="" onSubmit={handleSubmit}>
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Id:</label>
-                                <div class="col-sm-10">
-                                    <input type="text" value={values.id} onChange={e => setValues({...values, id: e.target.value})} placeholder='id' class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">Id:</label>
+                                <div className="col-sm-10">
+                                    <input type="text" value={values.id} onChange={e => setValues({...values, id: e.target.value})} placeholder='id' className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">ProductName</label>
-                                <div class="col-sm-10">
-                                    <input type="text" value={values.ProductName} onChange={e => setValues({...values, ProductName: e.target.value})} placeholder='Enter ProductName' class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">ProductName</label>
+                                <div className="col-sm-10">
+                                    <input type="text" value={values.ProductName} onChange={e => setValues({...values, ProductName: e.target.value})} placeholder='Enter ProductName' className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">ProductPrice</label>
-                                <div class="col-sm-10">
-                                    <input type="text" value={values.ProductPrice} onChange={e => setValues({...values, ProductPrice: e.target.value})} placeholder='Enter ProductPrice' class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">ProductPrice</label>
+                                <div className="col-sm-10">
+                                    <input type="text" value={values.ProductPrice} onChange={e => setValues({...values, ProductPrice: e.target.value})} placeholder='Enter ProductPrice' className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">ProductInfo1</label>
-                                <div class="col-sm-10">
-                                    <input type="text" placeholder='Enter ProductInfo1' class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">ProductInfo1</label>
+                                <div className="col-sm-10">
+                                    <input type="text" placeholder='Enter ProductInfo1' className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Discount</label>
-                                <div class="col-sm-10">
-                                    <input type="text" placeholder='Enter Discount' class="form-control" id="inputPassword" required />
-                                </div>
-                            </div>
-
-                            <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">category</label>
-                                <div class="col-sm-10">
-                                    <input type="text" placeholder='Enter category' class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">Discount</label>
+                                <div className="col-sm-10">
+                                    <input type="text" placeholder='Enter Discount' className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
 
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">color</label>
-                                <div class="col-sm-10">
-                                    <input type="text" placeholder='Enter color' class="form-control" id="inputPassword" required />
-                                </div>
-                            </div>
-                            <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Size</label>
-                                <div class="col-sm-10">
-                                    <input type="text" placeholder='Enter Size' class="form-control" id="inputPassword" required />
-                                </div>
-                            </div>
-                            <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Brands</label>
-                                <div class="col-sm-10">
-                                    <input type="text" placeholder='Enter Brands' class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">category</label>
+                                <div className="col-sm-10">
+                                    <input type="text" placeholder='Enter category' className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
 
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">CategeoryName</label>
-                                <div class="col-sm-10">
-                                    <input type="text" placeholder='Enter CategeoryName' class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">color</label>
+                                <div className="col-sm-10">
+                                    <input type="text" placeholder='Enter color' className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">Availability</label>
-                                <div class="col-sm-10">
-                                    <input type="text" placeholder='Enter Availability' class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">Size</label>
+                                <div className="col-sm-10">
+                                    <input type="text" placeholder='Enter Size' className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">featured</label>
-                                <div class="col-sm-10">
-                                    <input type="text" placeholder='Enter featured' class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">Brands</label>
+                                <div className="col-sm-10">
+                                    <input type="text" placeholder='Enter Brands' className="form-control" id="inputPassword" required />
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="inputPassword" className="col-sm-2 col-form-label">CategeoryName</label>
+                                <div className="col-sm-10">
+                                    <input type="text" placeholder='Enter CategeoryName' className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">LeftCardImg</label>
-                                <div class="col-sm-10">
-                                    <input type="file" class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">Availability</label>
+                                <div className="col-sm-10">
+                                    <input type="text" placeholder='Enter Availability' className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
                             <div>
-                                <label for="inputPassword" class="col-sm-2 col-form-label">image</label>
-                                <div class="col-sm-10">
-                                    <input   onChange={e => setValues({...values, image: e.target.value})} type="file" class="form-control" id="inputPassword" required />
+                                <label for="inputPassword" className="col-sm-2 col-form-label">featured</label>
+                                <div className="col-sm-10">
+                                    <input type="text" placeholder='Enter featured' className="form-control" id="inputPassword" required />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="inputPassword" className="col-sm-2 col-form-label">LeftCardImg</label>
+                                <div className="col-sm-10">
+                                    <input type="file" className="form-control" id="inputPassword" required />
+                                </div>
+                            </div>
+                            <div>
+                                <label for="inputPassword" className="col-sm-2 col-form-label">image</label>
+                                <div className="col-sm-10">
+                                    <input   onChange={e => setValues({...values, image: e.target.value})} type="file" className="form-control" id="inputPassword" required />
                                 </div>
                             </div>
 

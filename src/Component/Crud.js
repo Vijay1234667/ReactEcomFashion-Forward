@@ -26,7 +26,6 @@ const Crud = () => {
                 </div>
                 <div className=" DashboardCrud">
                     <table>
-                        
                         <thead>
                             <tr>
                                 {column.map((c, i) => (
@@ -35,7 +34,6 @@ const Crud = () => {
                                 <th>Actions</th>
                             </tr>
                         </thead>
-                        
                         <tbody>
                             {
                                 records.map((d, i) => (

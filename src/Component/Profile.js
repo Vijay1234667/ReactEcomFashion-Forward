@@ -1,16 +1,16 @@
 import React from 'react'
 import { Container } from 'react-bootstrap-v5'
 
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward'; import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import BusinessIcon from '@mui/icons-material/Business';
 import LanguageIcon from '@mui/icons-material/Language';
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import LogoutIcon from '@mui/icons-material/Logout';
-
 import AboutPerson from './assets/AboutPerson.jpg'
-import BreadcrumbFixedTop from './BreadcrumbFixedTop';
-
-
+import BreadcrumbFixedTop from './BreadcrumbFixedTop'
+import { Link } from 'react-router-dom';
 const ProfilePage = () => {
     return (
         <>
@@ -28,14 +28,14 @@ const ProfilePage = () => {
                                     <span className="profile-detail-id"> Since Sep 2023</span>
                                 </div>
                             </div>
-                            <div className=''>
-                                <a href="#crud" className='orange-btn-btn text-nowrap'>ALL PRODUCT</a>
+                            <div className='transparent-btn'>
+                                <Link to="/crud" className='btn text-nowrap'>ALL PRODUCT</Link>
                             </div>
                         </div>
                         <hr />
 
                         <div className="title-bar">
-                            <h6 className="mb-3">Account Settings</h6>
+                            <h4  className="mb-3 font-h4">Account Settings</h4>
                         </div>
                         <div className="account-setting-body">
                             <ul className="p-0">
@@ -46,7 +46,7 @@ const ProfilePage = () => {
                                     </div>
                                     <div className="ms-auto">
                                         <a href="/">
-                                            <ArrowForwardIcon />
+                                            <AddCircleIcon />
                                         </a>
                                     </div>
                                 </li>
@@ -60,7 +60,7 @@ const ProfilePage = () => {
                                     </div>
                                     <div className="ms-auto">
                                         <a href="/" className="edit-profil">
-                                            <ArrowForwardIcon />
+                                            <AddCircleIcon />
                                         </a>
                                     </div>
                                 </li>
@@ -74,7 +74,7 @@ const ProfilePage = () => {
                                     </div>
                                     <div className="ms-auto">
                                         <a href="/" className="edit-profil">
-                                            <ArrowForwardIcon />
+                                            <AddCircleIcon />
                                         </a>
                                     </div>
                                 </li>
@@ -87,7 +87,7 @@ const ProfilePage = () => {
                                     </div>
                                     <div className="ms-auto">
                                         <a href="/" className="edit-profil">
-                                            <ArrowForwardIcon />
+                                            <AddCircleIcon />
                                         </a>
                                     </div>
                                 </li>

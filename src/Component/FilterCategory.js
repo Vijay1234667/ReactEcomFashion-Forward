@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import ProgressBar from 'react-bootstrap/ProgressBar';
 import Product from '../Component/Product';
 import { useProductContext } from './Context/ProductContext';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
@@ -7,6 +6,8 @@ import GridViewIcon from '@mui/icons-material/GridView';
 import CloseIcon from '@mui/icons-material/Close';
 import { Container } from 'react-bootstrap-v5';
 import BreadcrumbFixedTop from './BreadcrumbFixedTop';
+import HomeNewslaterSection from './HomeNewslaterSection';
+import SALE1 from "./assets/SALE1.png";
 
 const FilterCategoryPage = () => {
     const { featureProducts } = useProductContext();
@@ -72,7 +73,7 @@ const FilterCategoryPage = () => {
             setFilteredProducts(featureProducts);
         } else {
             setFilteredProducts(featureProducts.filter(product => product.Availability === selectedAvailability));
-            
+
         }
     }, [selectedAvailability, featureProducts]);
 
@@ -81,13 +82,8 @@ const FilterCategoryPage = () => {
     };
 
 
-
-
-
     useEffect(() => {
         let filtered = featureProducts;
-
-        
         if (searchQuery) {
             filtered = filtered.filter(product => product.ProductName.toLowerCase().includes(searchQuery.toLowerCase()));
         }
@@ -99,36 +95,37 @@ const FilterCategoryPage = () => {
         setSearchQuery(event.target.value);
     };
 
-
     return (
         <>
-        <BreadcrumbFixedTop Title="Category" Subtitle="Category"/>
+            <BreadcrumbFixedTop Title="Category" Subtitle="Category" />
             <section className='FilterCategoryPage'>
                 <Container>
                     <div className="row">
                         <div className="col-md-3">
-                            <h4 className='mb-3'>Filter</h4>
-                            <div className='TopCategoryFilter filterallproductcss'>
-                                <div>
-                                    <button className='btn text-dark' onClick={() => handleCategoryClick('All')}>All</button>
-                                </div>
-                                <div>
-                                    <button className='btn text-dark' onClick={() => handleCategoryClick('Men')}>Men</button>
-                                </div>
-                                <div>
-                                    <button className='btn text-dark' onClick={() => handleCategoryClick('Men T-Shirt')}>Men T-Shirt</button>
-                                </div>
-                                <div>
-                                    <button className='btn text-dark' onClick={() => handleCategoryClick('Women')}>Women</button>
-                                </div>
+                            <h4 className='mb-3'>Filter Category</h4>
+                            <div className='filterallproductcss'>
+                                <ul className='p-0'>
+                                    <li>
+                                        <button className='btn' onClick={() => handleCategoryClick('All')}>All</button>
+                                    </li>
+                                    <li>
+                                        <button className='btn' onClick={() => handleCategoryClick('Men')}>Men</button>
+                                    </li>
+                                    <li>
+                                        <button className='btn' onClick={() => handleCategoryClick('Women')}>Women</button>
+                                    </li>
+                                    <li>
+                                        <button className='btn' onClick={() => handleCategoryClick('Kids')}>Kid's</button>
+                                    </li>
+                                </ul>
                             </div>
 
                             <div className=' mt-3'>
                                 <h4>Color</h4>
                                 <div className='filter-Color filterallproductcss'>
                                     <ul className=" d-flex p-0">
-                                    <li>
-                                            <button href="/" onClick={() => handleColorClick('All')} className=" border-3 px-1 me-2">All</button>
+                                        <li>
+                                            <button href="/" onClick={() => handleColorClick('All')} className=" px-1 me-2">All</button>
                                         </li>
                                         <li>
                                             <button href="/" onClick={() => handleColorClick('green')} className="btn bg-success me-2"></button>
@@ -208,25 +205,31 @@ const FilterCategoryPage = () => {
                                 </div>
                             </div>
 
-                            <div>
+                            <div className=''>
+                              
                                 <h4 className='mt-3'>Price</h4>
-                                <span>&#8377;600000</span>
-                                <ProgressBar variant="success" now={40} />
+                                <span className='fw-bold fs-6'>&#8377;600000</span>
+                                <div><input className='w-100' type="range" name="" id="" /></div>
+                                
                             </div>
-                            <div className='mt-4 clear-filter-btn'>
+
+                            <div className='mt-4 transparent-btn'>
                                 <button className='btn' onClick={() => handleCategoryClick('All')}>Clear Filter <CloseIcon /></button>
                             </div>
+                            <>
+                                <div>
+                                    <img className='img-fluid' src={SALE1} alt="" />
+                                </div>
+                                </>
                         </div>
-                        <div className="col-md-8">
-                      
+                        <div className="col-md-9">
                             <div className='d-flex justify-content-between mb-2'>
-                                
                                 <div className='list-grid-icons'>
                                     <button className='btn'><FormatListBulletedIcon /></button>
                                     <button className='btn'><GridViewIcon /></button>
                                 </div>
                                 <div className='Product-Search-input d-flex'>
-                                    <input type="text" value={searchQuery} onChange={handleSearchChange}placeholder='Search Product Here' id="" />
+                                    <input type="text" value={searchQuery} onChange={handleSearchChange} placeholder='Search Product Here' id="" />
                                     <div className=''>
                                         <a href="" className='btn ms-2'>Search</a>
                                     </div>
@@ -234,10 +237,8 @@ const FilterCategoryPage = () => {
                             </div>
                             <div className='filtersalebgimg mb-4'>
                             </div>
-                           
-
                             <div className="row">
-                                {filteredProducts.slice(0, 12).map((curElem) => {
+                                {filteredProducts.slice(0, 9).map((curElem) => {
                                     return <Product key={curElem.id} {...curElem} />;
                                 })}
                             </div>
@@ -245,6 +246,7 @@ const FilterCategoryPage = () => {
                     </div>
                 </Container>
             </section>
+            <HomeNewslaterSection />
         </>
     );
 }

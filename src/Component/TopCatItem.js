@@ -34,12 +34,12 @@ const TopCatItem = () => {
                 }}
                 breakpoints={{
                     576: {
-                      slidesPerView: 3,
+                        slidesPerView: 2,
                     },
                     768: {
-                      slidesPerView: 4,
+                        slidesPerView: 4,
                     },
-                  }}
+                }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
                 className="mySwiper"
@@ -49,7 +49,7 @@ const TopCatItem = () => {
                     return (
                         <SwiperSlide key={id}>
                             <Link to={`/singleproduct/${id}`} >
-                                <div className="product-cards-main-body ">
+                                <div className="product-cards-main-body h-100">
                                     <div className="image-section">
                                         <img src={`${base_url}` + `${public_url}/` + image} className="card-img-top "
                                             alt="img" />
@@ -79,6 +79,9 @@ const TopCatItem = () => {
                                         </div>
                                         <div className='Discount'>
                                             <button className='btn'>{Discount}</button>
+                                        </div>
+                                        <div className='product-main-ATC-btn'>
+                                            <a href="" className='btn btn-dark w-100'>Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>

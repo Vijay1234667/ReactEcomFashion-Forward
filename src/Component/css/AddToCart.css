@@ -1,27 +1,6 @@
-.add-to-bag-main-page {
-  padding: 20px 0px 20px;
-}
-.add-to-bag-main-page p {
-  font-size: 15px;
-  line-height: 1.8;
-  font-weight: 500;
-  color: #41415afa;
-}
 
-.add-to-bag-main-page h5 {
-  font-size: 19px;
-  line-height: 1.8;
-  font-weight: 600;
-  color: rgba(101, 33, 24, 0.907);
-}
 .add-to-carts-featured-products-sizes-btn ul li {
   margin-right: 6px;
-}
-.h6color{
-  font-size: 16px;
-  letter-spacing: 0.3px;
-  color: black;
-  font-weight: 600;
 }
 .QuantitySection .btn{
   background-color: black;

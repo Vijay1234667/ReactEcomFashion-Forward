@@ -1,3 +1,4 @@
+import TrendingItems from "./TrendingItems";
 import CosmeticsSalesSection from "./CosmeticsSalesSection";
 import HomeBannerPage from "./HomeBannerPage";
 import HomeBrandCompany from "./HomeBrandCompany";
@@ -11,12 +12,13 @@ import TopCategory from "./TopCategory";
 function HomePage() {
     return (
         <>
-             <HomeSection1 />
+            <HomeSection1 />
             <HomeBannerPage />
             <HomeSection3 />
             <HomeMainProductSection />
             <HomeParallaxSection />
             <TopCategory />
+            <TrendingItems />
             <CosmeticsSalesSection />
             <HomeBrandCompany />
             <HomeNewslaterSection />

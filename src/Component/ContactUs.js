@@ -13,16 +13,15 @@ import BreadcrumbFixedTop from './BreadcrumbFixedTop';
 const ContactUsPage = () => {
     return (
         <>
-    <BreadcrumbFixedTop Title="Contact" Subtitle="Contact"/>
+            <BreadcrumbFixedTop Title="Contact" Subtitle="Contact" />
             <section className="contact-us-section">
                 <Container>
-                    <h2 className='text-center'>Contact With US</h2>
-                    <p className='text-center sameparacolor'>
+                    <p className='text-center text-paragraph'>
                         Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
                     </p>
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-12">
-                            <p>Do you have any questions, suggestions, or inquiries? Feel free to
+                            <p className='text-paragraph'>Do you have any questions, suggestions, or inquiries? Feel free to
                                 contact
                                 anytime to get in touch with our team. We're always ready to assist you
                                 with anything.
@@ -30,47 +29,49 @@ const ContactUsPage = () => {
                             <div>
                                 <ul className="contact-additional-info p-0">
                                     <li>
-                                        <p><span><FmdGoodIcon /></span><a href='/'><span
-                                            className="px-2">Powai
-                                            Mumbai-400076</span></a></p>
+                                        <p className=''>
+                                            <FmdGoodIcon className='me-2 text-primary' />Powai
+                                            Mumbai-400076
+                                        </p>
                                     </li>
                                     <li>
-                                        <p><span><AddIcCallIcon /></span><a href='/'><span
-                                            className="px-2">+
-                                            9137168732</span></a></p>
+                                        <p>
+                                            <AddIcCallIcon className='me-2 text-danger'/>+
+                                            9137168732
+                                        </p>
                                     </li>
                                     <li>
-                                        <p><span><AddIcCallIcon /></span><a href='/'><span
-                                            className="px-2">+
-                                            9137168732</span></a></p>
+                                        <p>
+                                            <AddIcCallIcon className='me-2 text-danger'/>+
+                                            9137168732
+                                        </p>
                                     </li>
                                     <li>
-                                        <p><span><EmailIcon /></span><a href='/'><span
-                                            className="px-2">vykumar381@gamil.com</span></a></p>
+                                        <p><EmailIcon className='me-2 text-secondary'/>vykumar381@gamil.com</p>
                                     </li>
                                 </ul>
                             </div>
 
                             <div>
-                                <ul className="contact-us-left-social p-0">
+                                <ul className=" d-flex contact-us-left-social p-0">
                                     <li>
-                                        <a href='/'><FacebookOutlinedIcon /></a>
+                                        <a className='text-dark' href='/'><FacebookOutlinedIcon /></a>
                                     </li>
                                     <li>
-                                        <a href='/'><TwitterIcon /></a>
+                                        <a className='text-dark' href='/'><TwitterIcon /></a>
                                     </li>
                                     <li>
-                                        <a href='/'><LinkedInIcon /></a>
+                                        <a className='text-dark' href='/'><LinkedInIcon /></a>
                                     </li>
                                     <li>
-                                        <a href='/'><InstagramIcon /></a>
+                                        <a className='text-dark' href='/'><InstagramIcon /></a>
                                     </li>
 
                                 </ul>
                             </div>
                         </div>
 
-                        <div className="col-lg-6 col-md-6 col-12">
+                        <div className="col-lg-6 col-md-6 col-12 mb-4">
                             <form action='https://formspree.io/f/xdoqjkpj' method='POST'>
                                 <div className="form-group row">
                                     <label for="name" className="col-lg-12 col-form-label " >Full Name</label>
@@ -98,7 +99,7 @@ const ContactUsPage = () => {
 
                                 <div className="form-group row">
                                     <div className="contact-us-submit-btn">
-                                        <input type="submit" id="submitDetails" className="btn" autoCapitalize='off' name="submitDetails"
+                                        <input type="submit" id="submitDetails" className="btn same-transparent-lg-btn" autoCapitalize='off' name="submitDetails"
                                             value="Send Message" /><br />
                                     </div>
                                 </div>

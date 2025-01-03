@@ -4,9 +4,9 @@ import { Container } from 'react-bootstrap-v5'
 import BreadcrumbFixedTop from './BreadcrumbFixedTop';
 
 const TermsConditionPage = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+    // useEffect(() => {
+    //     window.scrollTo(0, 0)
+    // }, [])
     return (
         <>
            <BreadcrumbFixedTop Title="Terms-And-Condition" Subtitle="Terms-And-Condition"/>

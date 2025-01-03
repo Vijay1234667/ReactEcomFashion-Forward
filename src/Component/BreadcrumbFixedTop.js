@@ -6,7 +6,7 @@ const BreadcrumbFixedTop = ({ Title, Subtitle }) => {
         <>
             <section className='BreadcrumbFixedTop'>
                 <div className='BreadcrumbFixedTopBody'>
-                    <h2 className='fontsize-h2'>{Title}</h2>
+                    <h2 className=' text-white'>{Title}</h2>
                     <Breadcrumb className='d-flex justify-content-center align-items-center '>
                         <Breadcrumb.Item className='BreadcrumbFixedTopSpan' href="">Home</Breadcrumb.Item>
                         <Breadcrumb.Item className='BreadcrumbFixedTopSpan' href="">{Subtitle}</Breadcrumb.Item>

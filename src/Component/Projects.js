@@ -1,17 +1,17 @@
 import React from 'react'
-import './css/Project.css'
 
-import ProjectCard from './assets/ProjectCard.png'
-import ProjectCard2 from './assets/ProjectCard2.png'
-import ProjectCard3 from './assets/ProjectCard3.png'
-import ProjectCard4 from './assets/ProjectCard4.png'
-import ProjectCard5 from './assets/ProjectCard5.png'
-import ProjectCard6 from './assets/ProjectCard6.png'
-import ProjectCard7 from './assets/ProjectCard7.png'
-import ProjectCard8 from './assets/ProjectCard8.png'
-import ProjectCard9 from './assets/ProjectCard9.png'
-import ProjectCard10 from './assets/ProjectCard10.png'
-import BreadcrumbFixedTop from './BreadcrumbFixedTop'
+import ProjectCard from './assets/ProjectCard.png';
+import ProjectCard2 from './assets/ProjectCard2.png';
+import ProjectCard3 from './assets/ProjectCard3.png';
+import ProjectCard4 from './assets/ProjectCard4.png';
+import ProjectCard5 from './assets/ProjectCard5.png';
+import ProjectCard6 from './assets/ProjectCard6.png';
+import ProjectCard7 from './assets/ProjectCard7.png';
+import ProjectCard8 from './assets/ProjectCard8.png';
+import ProjectCard9 from './assets/ProjectCard9.png';
+import ProjectCard10 from './assets/ProjectCard10.png';
+import BreadcrumbFixedTop from './BreadcrumbFixedTop';
+import ProjectPortfolioCard from './ProjectPortfolioCard';
 
 const ProjectsPage = () => {
     return (
@@ -19,8 +19,8 @@ const ProjectsPage = () => {
             <BreadcrumbFixedTop Title="Projects" Subtitle="Project" />
             <section className="section-work-data">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-3 col-6 text-center mb-4 mb-md-0">
+                    <div className="row text-white">
+                        <div className="col-lg-3 col-6 text-center mb-4 mb-md-0 ">
                             <h2 className="counter-numbers" data-number="2000">2220+</h2>
                             <p>Project Completed</p>
                         </div>
@@ -43,107 +43,27 @@ const ProjectsPage = () => {
             <section className="our-project-section">
                 <div className="container ">
                     <div className="our-project-section-top-content text-center mb-5">
-                        <h4 className='h4color'>All Projects</h4>
-                        <p>
+                        <h4 className='font-h3'>All Projects</h4>
+                        <p className='text-paragraph'>
                             Meet the Slick's crew - a dedicated and passionate team who wants to improve <br /> your experience of creating websites.
                         </p>
-                        <div className="">
+                        <div className="transparent-btn">
                             <a href="/" className="btn">OUR PROJECTS</a>
                         </div>
                     </div>
 
                     <div className="row popup-view1">
-                        <div className="col-lg-4 col-sm-6 animate__animated animate__fadeInLeft">
-                            <div className="card">
-                                <img className="img-fluid  card-img-top"
-                                    src={ProjectCard} alt="ShopImage" />
-                                <div className="card-body text-center">
-                                    <span></span>Project1
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-sm-6 animate__animated animate__fadeInDown">
-                            <div className="card">
-                                <img className="img-fluid card-img-top"
-                                    src={ProjectCard2} alt="ShopImage" />
-                                <div className="card-body text-center">
-                                    <span>Project2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-sm-6 animate__animated animate__fadeInDown">
-                            <div className="card">
-                                <img className="img-fluid card-img-top"
-                                    src={ProjectCard3} alt="ShopImage" />
-                                <div className="card-body text-center">
-                                    <span>Project2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-sm-6 animate__animated animate__fadeInDown">
-                            <div className="card">
-                                <img className="img-fluid card-img-top"
-                                    src={ProjectCard4} alt="ShopImage" />
-                                <div className="card-body text-center">
-                                    <span>Project2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-sm-6 animate__animated animate__fadeInDown">
-                            <div className="card">
-                                <img className="img-fluid card-img-top"
-                                    src={ProjectCard5} alt="ShopImage" />
-                                <div className="card-body text-center">
-                                    <span>Project2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-sm-6 animate__animated animate__fadeInDown">
-                            <div className="card">
-                                <img className="img-fluid card-img-top"
-                                    src={ProjectCard6} alt="ShopImage" />
-                                <div className="card-body text-center">
-                                    <span>Project2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-sm-6 animate__animated animate__fadeInDown">
-                            <div className="card">
-                                <img className="img-fluid card-img-top"
-                                    src={ProjectCard7} alt="ShopImage" />
-                                <div className="card-body text-center">
-                                    <span>Project2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-sm-6 animate__animated animate__fadeInDown">
-                            <div className="card">
-                                <img className="img-fluid card-img-top"
-                                    src={ProjectCard8} alt="ShopImage" />
-                                <div className="card-body text-center">
-                                    <span>Project2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-sm-6 animate__animated animate__fadeInDown">
-                            <div className="card">
-                                <img className="img-fluid card-img-top"
-                                    src={ProjectCard9} alt="ShopImage" />
-                                <div className="card-body text-center">
-                                    <span>Project2</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-sm-6 animate__animated animate__fadeInDown">
-                            <div className="card">
-                                <img className="img-fluid card-img-top"
-                                    src={ProjectCard10} alt="ShopImage" />
-                                <div className="card-body text-center">
-                                    <span>Project2</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div >
+                        <ProjectPortfolioCard ProjectNum="Project1" Image={ProjectCard} />
+                        <ProjectPortfolioCard ProjectNum="Project2" Image={ProjectCard2} />
+                        <ProjectPortfolioCard ProjectNum="Project3" Image={ProjectCard3} />
+                        <ProjectPortfolioCard ProjectNum="Project4" Image={ProjectCard4} />
+                        <ProjectPortfolioCard ProjectNum="Project5" Image={ProjectCard5} />
+                        <ProjectPortfolioCard ProjectNum="Project6" Image={ProjectCard6} />
+                        <ProjectPortfolioCard ProjectNum="Project7" Image={ProjectCard7} />
+                        <ProjectPortfolioCard ProjectNum="Project8" Image={ProjectCard8} />
+                        <ProjectPortfolioCard ProjectNum="Project9" Image={ProjectCard9} />
+                        <ProjectPortfolioCard ProjectNum="Project10" Image={ProjectCard10} />
+                    </div>
                 </div >
             </section >
         </>

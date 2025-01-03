@@ -5,9 +5,6 @@ import { Container } from 'react-bootstrap-v5'
 import BreadcrumbFixedTop from './BreadcrumbFixedTop';
 
 const PrivacyPolicyPage = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
     return (
         <>
         <BreadcrumbFixedTop Title="Privacy Policy" Subtitle="Privacy Policy"/>

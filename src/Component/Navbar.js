@@ -1,76 +1,54 @@
 import { NavLink } from "react-router-dom";
-import ELOGOS from './assets/ELOGOS.png'
-import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-function NavBar() {
+import EcomLogo1 from './assets/EcomLogo1.png';
 
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+
+function NavBar() {
 
     return (
         <>
-            <section className="navbar-section d-none d-md-block">
-                <div className="container">
-                    <div className="d-flex justify-content-between align-items-baseline">
-                        <div className="nav-sign-btn">
-                            <a href="index.html" className=""><img src={ELOGOS} alt="logo" width="200px" /></a>
-                        </div>
-                        <ul className="navbar-bottom-nav">
-                            <div className="d-flex mx-auto">
-                                <li>
-                                    <NavLink to="/">Home</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="about">About Us</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="contactus">Contact</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="filtercategory">Product</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="/cartsingleproduct/:id">Cart</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="blogs">Blogs</NavLink>
-                                </li>
-                                <li>
-                                    <NavLink to="faq">FAQ's</NavLink>
-                                </li>
-                            </div>
-                        </ul>
-                        <div className="nav-sign-btn d-flex">
-                            <div>
-                                <NavLink to="login" className='btn'>LOGIN</NavLink>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="d-md-none">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Navbar</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+            <section className="">
+                <>
+                    {['lg',].map((expand) => (
+                        <Navbar key={expand} expand={expand}>
+                            <Container>
+                                <Navbar.Brand>
+                                    <NavLink to="/">
+                                    <img className="img-fluid" src={EcomLogo1} alt="EcomLogo1" width="200px" />
+                                    </NavLink>
+                                </Navbar.Brand>
+                                <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+                                <Navbar.Offcanvas
+                                    id={`offcanvasNavbar-expand-${expand}`}
+                                    aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
+                                    placement="end"
+                                >
+                                    <Offcanvas.Header closeButton>
+                                        <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                                            <img src={EcomLogo1} className="img-fluid" width="180px" alt="" />
+                                        </Offcanvas.Title>
+                                    </Offcanvas.Header>
+                                    <Offcanvas.Body className="">
+                                        <Nav className=" Offcanvasbodynav justify-content-center flex-grow-1">
+                                            <NavLink className="navlinks" to="/">HOME</NavLink>
+                                            <NavLink className="navlinks" to="about">ABOUT US</NavLink>
+                                            <NavLink className="navlinks" to="filtercategory">PRODUCT</NavLink>
+                                            <NavLink className="navlinks" to="blogs">BLOGS</NavLink>
+                                            <NavLink className="navlinks" to="contactus">CONTACT</NavLink>
+                                            <NavLink className="navlinks" to="faq">FAQ</NavLink>
+                                        </Nav>
+                                        <Nav className=" Offcanvasbodynav justify-content-center ">
+                                            <NavLink to="/" className="btn btn-white nav-offer-btn d-none d-md-block">20%OFF</NavLink>
+                                        </Nav>
+                                    </Offcanvas.Body>
+                                </Navbar.Offcanvas>
+                            </Container>
+                        </Navbar>
+                    ))}
+                </>
             </section>
         </>
     );

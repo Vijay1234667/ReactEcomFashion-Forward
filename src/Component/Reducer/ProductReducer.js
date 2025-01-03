@@ -1,5 +1,4 @@
 const ProductReducer = (state, action) => {
-
     switch (action.type) {
         case "SET_LOADING":
             return {
@@ -18,7 +17,7 @@ const ProductReducer = (state, action) => {
                 products: action.payload,
                 featureProducts: featureData,
             };
-
+            
         case "API_ERROR":
             return {
                 ...state,
@@ -41,13 +40,35 @@ const ProductReducer = (state, action) => {
                 singleProduct: action.payload,
             };
 
-
         case "SET_SINGLE_ERROR":
             return {
                 ...state,
                 isSingleLoading: false,
                 isError: true,
             };
+
+        case "SET_ADD_TO_CART_PRODUCT":
+            const { product, quantity, totalPrice } = action.payload;
+            return {
+                ...state,
+                isSingleLoading: false,
+                carts: [...state.carts, product],
+                quantity: quantity,
+                totalPrice: totalPrice,
+            };
+
+
+        case "FILTER_BY_CATEGORY":
+            const filteredProducts = state.products.filter(
+                (product) => product.category === action.payload
+              );
+
+            return {
+                ...state,
+                isLoading: false,
+                allproduct:filteredProducts
+            };
+
 
         default:
             return state;

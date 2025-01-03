@@ -1,12 +1,29 @@
-import React, { useState } from 'react'
-import limitoffer1 from './assets/limitoffer1.png'
-import limitoffer2 from './assets/limitoffer2.png'
+import React, { useEffect, useState } from 'react'
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import './css/Home.css';
+import { Container } from 'react-bootstrap-v5';
+
+import Typed from "typed.js";
 
 const HomeSection3 = () => {
+    useEffect(() => {
+        const options = {
+          strings: ["Sunglasses", "Bag", "Watch", "Shoes"],
+          typeSpeed: 180,
+          backSpeed: 180,
+          loop: true,
+        };
+        const typed = new Typed(".auto-type-textSale1", options);
+    
+        return () => {
+          typed.destroy();
+        };
+      }, []);
+
+
+
 
     let time = new Date().toLocaleTimeString();
-
     const [ctime, setCtime] = useState(time);
 
     const UpdateTime = () => {
@@ -14,27 +31,42 @@ const HomeSection3 = () => {
         setCtime(time);
     };
     setInterval(UpdateTime, 1000)
+
+
+
+
     return (
         <>
-            <section className="Limited-offers-section">
-                <div className="container bg-pink">
-                    <div className="row align-items-center">
-                        <div className="col-md-3 d-none d-md-block">
-                            <img className="img-fluid" src={limitoffer1} alt="limitoffer1" />
-                        </div>
-
-                        <div className="col-md-6 py-3 md-py-0">
-                            <div className="text-center">
-                                <button className='orange-btn-btn mb-3 mb-md-2'>LIMITED OFFER</button>
-                                <h3 className='text-white'>{ctime}</h3>
-                                <p className='text-paragraph'>25% Off Only This Monday <br />and Get Special Offer</p>
-                            </div>
-                        </div>
-                        <div className="col-md-3 d-md-block d-none">
-                            <img className="img-fluid" src={limitoffer2} alt="limitoffer2" />
+            <section className="Limited-offers-section mt-5 mb-5">
+                <Container>
+                    <div className="">
+                        <div className='text-center text-white'>
+                            <h2 className='mb-4 font-h2'>End of Season <span className='auto-type-textSale1'></span>
+                                <span className='d-md-block'>Sale upto 30%</span></h2>
+                            <a href="/" className='btn '> <AddShoppingCartIcon className='me-1 nav-offer-btn' />Shop Now</a>
+                            <ul className='d-flex justify-content-center Limited-offers-timmer'>
+                                <li>
+                                    <span>09</span>
+                                    <h6 className='d-block fs-5'>Days</h6>
+                                </li>
+                                <li>
+                                    <span>13</span>
+                                    <h6 className='d-block fs-5'>Hours</h6>
+                                </li>
+                                <li>
+                                    <span>17</span>
+                                    <h6 className='d-block fs-5'>Min</h6>
+                                </li>
+                                <li>
+                                    <spa>01</spa>
+                                    <h6 className='d-block fs-5'>Sec</h6>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
+
+                </Container>
+
             </section>
         </>
     )

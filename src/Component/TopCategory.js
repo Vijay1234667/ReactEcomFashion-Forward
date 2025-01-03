@@ -6,7 +6,7 @@ const TopCategory = () => {
 
     return (
         <>
-            <section className='Top-Categories-Carousel'>
+            <section className='Top-Categories-Carousel mb-5'>
                 <div className="container">
                     <div>
                         <div className='text-center mt-4'>
@@ -19,12 +19,6 @@ const TopCategory = () => {
                     </div>
                 </div>
             </section>
-
-            <section className='d-none d-md-block'>
-                <div className="container prallax-fixed1-section">
-                </div>
-            </section>
-
         </>
 
 
