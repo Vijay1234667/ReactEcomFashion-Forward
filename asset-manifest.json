@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ReactEcomFashion-Forward/static/css/main.e012ee1c.css",
+    "main.css": "/ReactEcomFashion-Forward/static/css/main.f0269005.css",
     "main.js": "/ReactEcomFashion-Forward/static/js/main.f5986be8.js",
     "static/js/453.cfe7c5ff.chunk.js": "/ReactEcomFashion-Forward/static/js/453.cfe7c5ff.chunk.js",
     "static/media/ProjectCard3.png": "/ReactEcomFashion-Forward/static/media/ProjectCard3.9b3f7fb552ece5ea4148.png",
@@ -73,12 +73,12 @@
     "static/media/Deliveryaddresstopimg.svg": "/ReactEcomFashion-Forward/static/media/Deliveryaddresstopimg.75032bc6da9f8b29b9df7108be65911b.svg",
     "static/media/AboutLeft1.webp": "/ReactEcomFashion-Forward/static/media/AboutLeft1.608ba972ba9fae8c5376.webp",
     "index.html": "/ReactEcomFashion-Forward/index.html",
-    "main.e012ee1c.css.map": "/ReactEcomFashion-Forward/static/css/main.e012ee1c.css.map",
+    "main.f0269005.css.map": "/ReactEcomFashion-Forward/static/css/main.f0269005.css.map",
     "main.f5986be8.js.map": "/ReactEcomFashion-Forward/static/js/main.f5986be8.js.map",
     "453.cfe7c5ff.chunk.js.map": "/ReactEcomFashion-Forward/static/js/453.cfe7c5ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e012ee1c.css",
+    "static/css/main.f0269005.css",
     "static/js/main.f5986be8.js"
   ]
 }
