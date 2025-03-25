@@ -22,7 +22,6 @@ body {
   overflow-x: hidden;
 }
 .container {
-  max-width: 1280px;
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -178,18 +177,17 @@ h1 {
 /****NAVIGATION SECTION****/
 .navbar {
   background: linear-gradient(90deg, rgba(5, 27, 30, 0.752), #0c22478d);
-  box-shadow: 0px 4px 21.7px 0px #0000002B;
 }
 .navbar .active {
   color: rgb(253, 242, 26) !important;
 }
 .navbar a {
   color: var(--color-white) !important;
-  letter-spacing: 1.1px;
-  position: relative;
-  margin-right: 15px;
-  font-weight: 500 !important;
-  text-decoration: none;
+  letter-spacing: 0.9px;
+  // position: relative;
+  margin-right: 10px;
+  // font-weight: 500 !important;
+  // text-decoration: none;
 }
 .Offcanvasbodynav a{
   color:white;
@@ -198,6 +196,7 @@ h1 {
   font-weight: 600;
   letter-spacing: 1.1px;
 }
+
 .offcanvas.show:not(.hiding), .offcanvas.showing{
   width: 100%;
 }
@@ -224,28 +223,17 @@ button:focus:not(:focus-visible){
   box-shadow: none;
 }
 
-.navbar .navlinks::after {
-  content: "";
-  position: absolute;
-  background: var(--orange-color);
-  height: 2px;
-  left: 0;
-  bottom: -4px;
-  right: 0;
-  margin: 0 auto;
-  transform: scaleX(0);
-  transition: 0.3s ease-in-out;
+.glow-button {
+  background: linear-gradient(45deg, #e5e7e8, #cdcccc);
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  animation: glow 1.5s infinite alternate;
 }
 
-.navbar .navlinks:hover::after {
-  transform: scaleX(1);
-}
 
-.nav-offer-btn{
-  animation: glowing 1300ms infinite;
-}
-
-@keyframes glowing {
+@keyframes glow {
   0% {
     transform: scale(1);
     box-shadow: 0 0 0 0 rgba(231, 228, 60, 0.7);
@@ -260,8 +248,27 @@ button:focus:not(:focus-visible){
   }
 }
 
-.categories-brand a{
-  text-decoration: none;
+/****BREADCRUMB-FIXED-TOP-SECTION****/
+
+.BreadcrumbFixedTop {
+  background-image: linear-gradient(#1b374bbf, rgba(50, 68, 149, 0.599)),
+    url(../src/Component/assets/bg-fixeedBreadCrumb.jpg);
+  height: 320px;
+  background-size: 100%;
+  background-position: center top;
+  display: flex;
+  justify-content: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.BreadcrumbFixedTop a {
+  color: white !important;
+  font-weight: 500;
+}
+.breadcrumb-item+.breadcrumb-item::before{
+  color: white !important;
 }
 
 
@@ -280,6 +287,8 @@ button:focus:not(:focus-visible){
   left: 10%;
   position: absolute;
 }
+
+
 /****PRIVACY AND TERMS CONDITION****/
 .PrivacyAndTermsBody {
   max-width: 1080px;
@@ -295,66 +304,67 @@ button:focus:not(:focus-visible){
   color: var(--orange-color);
 }
 
-/****CRUD SECTION****/
 
-.DashboardCrud {
-  padding: 20px 0px 20px;
+
+/****FREQUENTLY-ASKED-QUESTIONS****/
+.Faq-Section .Accordion-Body-section .accordion-button {
+  color: var(--color-black);
+  background-color: var(--bg-body);
 }
-.DashboardCrud table {
-  border: 2px solid black;
+.Faq-Section .accordion-button:not(.collapsed) {
+  background-color: var(--bg-body);
 }
-.DashboardCrud td {
-  border: 3px solid black;
-  padding: 6px;
+.Faq-Section .accordion-button:focus {
+  box-shadow: none;
 }
-.DashboardCrud th {
-  padding: 6px;
-  border: 3px solid black;
-  color: #ebebeb;
-  background-color:#338ac8;
+.Faq-Section .Accordion-Body-section .accordion-answer {
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: var(--color-black);
+  background-color: var(--bg-body);
 }
-.DashboardCrud .btn {
-  padding: 6px 10px;
-  width: 100px;
-  border-radius: 0px;
-  margin: 3px 0px 3px;
+.Faq-Section .accordion-button::after {
+  content: "+";
+  background-image: none;
+  background-color: var(--orange-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-white);
+  padding: 15px;
+  border-radius: 10%;
+}
+.Faq-Section .accordion-button:not(.collapsed)::after {
+  content: "-";
+  background-image: none;
 }
 
-.AddCrudjsonData input {
-  border: 1px solid rgba(164, 27, 27, 0.814);
-  border-radius: 0px;
-  padding: 7px 2px 7px;
+/****CONTACT-US-SECTION****/
+.contact-us-section .container {
+  max-width: 1024px;
+  margin: 0px auto;
 }
-.AddCrudjsonData label {
-  letter-spacing: 1px;
-  font-size: 16px;
+
+.contact-us-left-social li {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: 1px solid var(--color-black);
+}
+.contact-us-section input {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 8px 5px 10px;
+  border: 1px solid var(--orange-color);
+  background-color: transparent;
+}
+.contact-us-section label {
+  font-size: 15px;
   font-weight: 400;
 }
 
-.DashboardCrud {
-  overflow: scroll;
-  width: 100%;
-}
-
-.addProductbtntodo .btn {
-  background-color: rgb(228, 81, 36);
-  color: white;
-  padding: 7px 16px;
-  letter-spacing: 1px;
-  font-size: 15px;
-  border-radius: 0px;
-  font-weight: 500;
-}
-
-
-.submitbtn .btn {
-  background-color: #030106;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 0px;
-  color: white;
-  padding: 5px 30px;
-}
 
 
 /****FOOTER SECTION****/
@@ -421,8 +431,12 @@ button:focus:not(:focus-visible){
 /* 351 */
 
 
+
+
 @media only screen and (max-width:769px){
   .Offcanvasbodynav a{
     margin: 10px 0px;
   }
 }
+
+

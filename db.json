@@ -58,12 +58,19 @@
       "id": "6",
       "ProductName": "Belts",
       "ProductPrice": 4500,
+      "image": "01_2.webp",
       "ProductInfo1": "8K+ viewed in past month",
       "Discount": "10%",
+      "Category": "",
+      "Color": "",
+      "Size": "",
+      "Brands": "",
+      "CategoryName": "",
+      "Availability": "",
+      "Featured": "",
+      "LeftCardImg": "01_2.webp",
       "category": "Belts",
-      "color": "yellow",
-      "image": "01_2.webp",
-      "LeftCardImg": "01_2.webp"
+      "color": "yellow"
     },
     {
       "id": "7",
@@ -450,10 +457,18 @@
       "id": "45",
       "ProductName": "AWatch",
       "ProductPrice": 6700,
+      "image": "Watchimg7.png",
       "ProductInfo1": "abcd",
       "Discount": "NEW",
-      "category": "Watch",
-      "image": "Watchimg7.png"
+      "Category": "",
+      "Color": "",
+      "Size": "",
+      "Brands": "",
+      "CategoryName": "",
+      "Availability": "",
+      "Featured": "",
+      "LeftCardImg": "",
+      "category": "Watch"
     },
     {
       "id": "46",

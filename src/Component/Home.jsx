@@ -4,7 +4,6 @@ import HomeBannerPage from "./HomeBannerPage";
 import HomeBrandCompany from "./HomeBrandCompany";
 import HomeMainProductSection from "./HomeMainProductSection";
 import HomeNewslaterSection from "./HomeNewslaterSection";
-import HomeParallaxSection from "./HomeParallaxSection";
 import HomeSection1 from "./HomeSection1";
 import HomeSection3 from "./HomeSection3";
 import TopCategory from "./TopCategory";
@@ -16,7 +15,6 @@ function HomePage() {
             <HomeBannerPage />
             <HomeSection3 />
             <HomeMainProductSection />
-            <HomeParallaxSection />
             <TopCategory />
             <TrendingItems />
             <CosmeticsSalesSection />

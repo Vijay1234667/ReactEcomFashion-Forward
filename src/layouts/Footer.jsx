@@ -8,10 +8,10 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-import EcomLogo1 from './assets/EcomLogo1.png';
-import BlogsRightImg8 from './assets/BlogsRightImg8.jpg'
-import BlogsRightImg10 from './assets/BlogsRightImg10.jpg'
-import FooterPayment from './assets/FooterPayment.png'
+import EcomLogo1 from '../Component/assets/EcomLogo1.png';
+import BlogsRightImg8 from '../Component/assets/BlogsRightImg8.jpg'
+import BlogsRightImg10 from '../Component/assets/BlogsRightImg10.jpg'
+import FooterPayment from '../Component/assets/FooterPayment.png'
 
 
 function FooterPage() {

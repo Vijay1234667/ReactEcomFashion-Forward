@@ -1,12 +1,12 @@
 
 
-import Product from '../Component/Product';
+import Product from './Product';
 import MainSmallCardItems from './MainSmallCardItems'
 import ManageSearchIcon from '@mui/icons-material/ManageSearch';
 
 import { useProductContext } from './Context/ProductContext';
 import summersale from './assets/summersale.jpg'
-import HomeSaleimg from './assets/HomeSaleimg.jpg'
+import homebigsale from './assets/homebigsale.webp'
 import { Link } from 'react-router-dom';
 
 const HomeMainProductSection = () => {
@@ -21,7 +21,7 @@ const HomeMainProductSection = () => {
                     <div className="row">
                         <div className="col-md-4 mb-2">
                             <div>
-                                <img className="img-fluid mb-3" src={HomeSaleimg} alt="ShopImage" width="100%" />
+                                <img className="img-fluid mb-3" src={homebigsale} alt="ShopImage" width="100%" />
                             </div>
                             <div>
                                 {

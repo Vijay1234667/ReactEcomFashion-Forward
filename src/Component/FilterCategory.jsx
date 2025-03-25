@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Product from '../Component/Product';
+import Product from './Product';
 import { useProductContext } from './Context/ProductContext';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import GridViewIcon from '@mui/icons-material/GridView';

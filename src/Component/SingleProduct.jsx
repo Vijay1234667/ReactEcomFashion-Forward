@@ -19,6 +19,8 @@ import BreadcrumbFixedTop from './BreadcrumbFixedTop';
 const API = 'http://localhost:3001/cardata';
 
 const SingleProduct = () => {
+  const [selectedColor, setSelectedColor] = useState(null);
+  const [selectedSize, setSelectedSize] = useState(null);
   const [addImg, setaddImg] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [totalPrice, setTotalPrice] = useState(0);
@@ -66,6 +68,9 @@ const SingleProduct = () => {
   const currImg = (key) => {
     setaddImg(key);
   };
+
+  const colors = ['bg-success', 'bg-primary', 'bg-warning', 'bg-danger', 'bg-info'];
+  const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
   
   return (
     <>
@@ -106,42 +111,33 @@ const SingleProduct = () => {
                   <h5>
                     <span>&#8377;</span>{totalPrice}
                   </h5>
-                  <h6 className='mb-3'>Add Quantity</h6>
-                  <div className='d-flex mb-3'>
-                    <div className=''>
-                      <button className='btn btn-outline-primary'  type='button'>-</button>
-                    </div>
-                    <div className='ms-2'>
-                      <span className='' type='text'>1</span>
-                    </div>
-                    <div className='ms-2'>
-                      <button className='btn btn-outline-primary'  type='button'>+</button>
-                    </div>
-                  </div>
                 </div>
                 <div className='mb-3'>
                   <h6>More Colors..</h6>
                   <div className='choose-color'>
-                    <ul className='d-flex p-0 '>
-                      <li><a href='javascript:void(0)' className='btn bg-success'></a></li>
-                      <li><a href='javascript:void(0)' className='btn bg-primary'></a></li>
-                      <li><a href='javascript:void(0)' className='btn bg-warning'></a></li>
-                      <li><a href='javascript:void(0)' className='btn bg-danger'></a></li>
-                      <li><a href='javascript:void(0)' className='btn bg-info'></a></li>
-                    </ul>
-                  </div>
-                </div>
-                <div>
-                  <h6 className='mb-3'>Select Size</h6>
-                  <div className='add-to-carts-featured-products-sizes-btn mb-4'>
-                    <ul className='d-flex p-0'>
-                      <li><a className='btn' href='javascript:void(0)'>XS</a></li>
-                      <li><a className='btn' href='javascript:void(0)'>S</a></li>
-                      <li><a className='btn' href='javascript:void(0)'>M</a></li>
-                      <li><a className='btn' href='javascript:void(0)'>L</a></li>
-                      <li><a className='btn' href='javascript:void(0)'>XL</a></li>
-                      <li><a className='btn' href='javascript:void(0)'>XXL</a></li>
-                    </ul>
+                  <ul className='d-flex p-0'>
+                  {colors.map((color, index) => (
+                    <li key={index} className='ms-2'>
+                      <button 
+                        className={`btn p-3 ${color} ${selectedColor === color ? 'border border-dark border-2' : ''}`}
+                        onClick={() => setSelectedColor(color)}
+                      ></button>
+                    </li>
+                  ))}
+                </ul>
+                <h6 className='mb-3'>Select Size</h6>
+                <ul className='d-flex p-0'>
+                  {sizes.map((size, index) => (
+                    <li key={index} className='border ms-2'>
+                      <button 
+                        className={`btn ${selectedSize === size ? 'btn-dark text-white' : ''}`}
+                        onClick={() => setSelectedSize(size)}
+                      >
+                        {size}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
                   </div>
                 </div>
 

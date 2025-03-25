@@ -53,7 +53,7 @@ const ProjectsPage = () => {
                     </div>
 
                     <div className="row popup-view1">
-                        <ProjectPortfolioCard ProjectNum="Project1" Image={ProjectCard} />
+                        <ProjectPortfolioCard ProjectNum="Project1" Image={ProjectCard}/>
                         <ProjectPortfolioCard ProjectNum="Project2" Image={ProjectCard2} />
                         <ProjectPortfolioCard ProjectNum="Project3" Image={ProjectCard3} />
                         <ProjectPortfolioCard ProjectNum="Project4" Image={ProjectCard4} />
