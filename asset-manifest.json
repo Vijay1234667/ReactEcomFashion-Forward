@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ReactEcomFashion-Forward/static/css/main.bc61f0b7.css",
-    "main.js": "/ReactEcomFashion-Forward/static/js/main.c86f25a3.js",
+    "main.css": "/ReactEcomFashion-Forward/static/css/main.e012ee1c.css",
+    "main.js": "/ReactEcomFashion-Forward/static/js/main.f5986be8.js",
     "static/js/453.cfe7c5ff.chunk.js": "/ReactEcomFashion-Forward/static/js/453.cfe7c5ff.chunk.js",
     "static/media/ProjectCard3.png": "/ReactEcomFashion-Forward/static/media/ProjectCard3.9b3f7fb552ece5ea4148.png",
     "static/media/CosmeticsItem4.png": "/ReactEcomFashion-Forward/static/media/CosmeticsItem4.32b005ca4e23a5585c6c.png",
@@ -14,6 +14,7 @@
     "static/media/ProjectCard5.png": "/ReactEcomFashion-Forward/static/media/ProjectCard5.0dbb34feaa8884d8a73a.png",
     "static/media/CosmeticsItem2.png": "/ReactEcomFashion-Forward/static/media/CosmeticsItem2.00a8a8986a5f780833b2.png",
     "static/media/HomeBannerimg6.png": "/ReactEcomFashion-Forward/static/media/HomeBannerimg6.73171bd19f83b62373ac.png",
+    "static/media/homebigsale.webp": "/ReactEcomFashion-Forward/static/media/homebigsale.83637d90d4777d5d0727.webp",
     "static/media/BlogsRightImg5.jpg": "/ReactEcomFashion-Forward/static/media/BlogsRightImg5.fb44d39ffdc81c4fd923.jpg",
     "static/media/BigSale2MenWomen.png": "/ReactEcomFashion-Forward/static/media/BigSale2MenWomen.ac28474effac8a3f8537.png",
     "static/media/BlogsRightImg1.jpg": "/ReactEcomFashion-Forward/static/media/BlogsRightImg1.277524ecae224659e696.jpg",
@@ -25,7 +26,6 @@
     "static/media/ProjectCard7.png": "/ReactEcomFashion-Forward/static/media/ProjectCard7.bc15eb173626d0d91f68.png",
     "static/media/CosmeticsItem1.png": "/ReactEcomFashion-Forward/static/media/CosmeticsItem1.432b7a14e1dbc19821b8.png",
     "static/media/BlogsRightImg4.jpg": "/ReactEcomFashion-Forward/static/media/BlogsRightImg4.0d43362b579e85cf3a72.jpg",
-    "static/media/blogfurniture5.jpg": "/ReactEcomFashion-Forward/static/media/blogfurniture5.8fb0678f2542be884c91.jpg",
     "static/media/AboutLeft4.webp": "/ReactEcomFashion-Forward/static/media/AboutLeft4.b1f3c1012fa05d0da117.webp",
     "static/media/BlogsRightImg10.jpg": "/ReactEcomFashion-Forward/static/media/BlogsRightImg10.5a94d3af71c62f56e67c.jpg",
     "static/media/BlogsRightImg7.jpg": "/ReactEcomFashion-Forward/static/media/BlogsRightImg7.1dc2a0f5cec8157032eb.jpg",
@@ -34,18 +34,14 @@
     "static/media/HomeBannerimg4.jpg": "/ReactEcomFashion-Forward/static/media/HomeBannerimg4.afa51390da5e2443a5ca.jpg",
     "static/media/Parallaxbg2.webp": "/ReactEcomFashion-Forward/static/media/Parallaxbg2.603df919c6396af46b6b.webp",
     "static/media/BlogsRightImg6.jpg": "/ReactEcomFashion-Forward/static/media/BlogsRightImg6.680c4ce5ea56ddfdedcb.jpg",
-    "static/media/blogfurniture4.jpg": "/ReactEcomFashion-Forward/static/media/blogfurniture4.1a748c5da51ae0b8dc34.jpg",
-    "static/media/blogfurniture1.jpg": "/ReactEcomFashion-Forward/static/media/blogfurniture1.7181bef8ded3e8576ba2.jpg",
     "static/media/BlogsRightImg8.jpg": "/ReactEcomFashion-Forward/static/media/BlogsRightImg8.190d198f8787bee9260d.jpg",
     "static/media/SALE1.png": "/ReactEcomFashion-Forward/static/media/SALE1.b72db8e67e3c96f295a1.png",
     "static/media/Homenewslaterbg.jpeg": "/ReactEcomFashion-Forward/static/media/Homenewslaterbg.5ca69ed1aa839103a3f2.jpeg",
     "static/media/Parallaxbg1.webp": "/ReactEcomFashion-Forward/static/media/Parallaxbg1.de19d5c838691c36fbc2.webp",
     "static/media/Parallaxbg3.webp": "/ReactEcomFashion-Forward/static/media/Parallaxbg3.ee294094dd32a9346c0f.webp",
     "static/media/summersale.jpg": "/ReactEcomFashion-Forward/static/media/summersale.c4c924d9655a465dc6b8.jpg",
-    "static/media/blogfurniture3.jpg": "/ReactEcomFashion-Forward/static/media/blogfurniture3.a420ba3c2f21936e7a38.jpg",
     "static/media/EvaMendes.jpg": "/ReactEcomFashion-Forward/static/media/EvaMendes.c83b7409d49670a17594.jpg",
     "static/media/AboutFirstRoundedImg.jpg": "/ReactEcomFashion-Forward/static/media/AboutFirstRoundedImg.e4e2aa508b3a0454a18a.jpg",
-    "static/media/blogfurniture2.jpg": "/ReactEcomFashion-Forward/static/media/blogfurniture2.78d766d9af53df7fab90.jpg",
     "static/media/Vanessalaird.jpg": "/ReactEcomFashion-Forward/static/media/Vanessalaird.2f798c49fe3215154521.jpg",
     "static/media/Parallaxbg4.webp": "/ReactEcomFashion-Forward/static/media/Parallaxbg4.16ae6294ffce42987efc.webp",
     "static/media/CategeoriesItem4.png": "/ReactEcomFashion-Forward/static/media/CategeoriesItem4.324c38750c0e5c72ad9f.png",
@@ -62,11 +58,9 @@
     "static/media/CategeoriesItem1.jpg": "/ReactEcomFashion-Forward/static/media/CategeoriesItem1.7d3c2966698b2b432d4e.jpg",
     "static/media/AboutLeft2.webp": "/ReactEcomFashion-Forward/static/media/AboutLeft2.fde3e83ed78419705ddd.webp",
     "static/media/OliviaTaylor.jpg": "/ReactEcomFashion-Forward/static/media/OliviaTaylor.361b24d5eb6702dc37a6.jpg",
-    "static/media/HomeSaleimg.jpg": "/ReactEcomFashion-Forward/static/media/HomeSaleimg.bbfddd0c5458074a2f23.jpg",
     "static/media/b1img.jpg": "/ReactEcomFashion-Forward/static/media/b1img.45a21e0105bc8f2286dd.jpg",
     "static/media/AboutPerson.jpg": "/ReactEcomFashion-Forward/static/media/AboutPerson.e9f99819f026a191a806.jpg",
     "static/media/KavyaMalkova.jpg": "/ReactEcomFashion-Forward/static/media/KavyaMalkova.5bbb70390b16c6f3093e.jpg",
-    "static/media/homeparallaxsale.jpg": "/ReactEcomFashion-Forward/static/media/homeparallaxsale.8b1cd8fe7fd40f9f1f11.jpg",
     "static/media/LoginAbsoluteImg.svg": "/ReactEcomFashion-Forward/static/media/LoginAbsoluteImg.60cc2473480d692d346ab599d32a04f2.svg",
     "static/media/b4img.jpg": "/ReactEcomFashion-Forward/static/media/b4img.64b088ee94196d5078e2.jpg",
     "static/media/b3img.jpg": "/ReactEcomFashion-Forward/static/media/b3img.20b4880d898fe61ff353.jpg",
@@ -79,12 +73,12 @@
     "static/media/Deliveryaddresstopimg.svg": "/ReactEcomFashion-Forward/static/media/Deliveryaddresstopimg.75032bc6da9f8b29b9df7108be65911b.svg",
     "static/media/AboutLeft1.webp": "/ReactEcomFashion-Forward/static/media/AboutLeft1.608ba972ba9fae8c5376.webp",
     "index.html": "/ReactEcomFashion-Forward/index.html",
-    "main.bc61f0b7.css.map": "/ReactEcomFashion-Forward/static/css/main.bc61f0b7.css.map",
-    "main.c86f25a3.js.map": "/ReactEcomFashion-Forward/static/js/main.c86f25a3.js.map",
+    "main.e012ee1c.css.map": "/ReactEcomFashion-Forward/static/css/main.e012ee1c.css.map",
+    "main.f5986be8.js.map": "/ReactEcomFashion-Forward/static/js/main.f5986be8.js.map",
     "453.cfe7c5ff.chunk.js.map": "/ReactEcomFashion-Forward/static/js/453.cfe7c5ff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc61f0b7.css",
-    "static/js/main.c86f25a3.js"
+    "static/css/main.e012ee1c.css",
+    "static/js/main.f5986be8.js"
   ]
 }
