@@ -197,6 +197,9 @@ h1 {
   letter-spacing: 1.1px;
 }
 
+.offcanvas-body a{
+  color: #f3f3f3 !important;
+}
 .offcanvas.show:not(.hiding), .offcanvas.showing{
   width: 100%;
 }
