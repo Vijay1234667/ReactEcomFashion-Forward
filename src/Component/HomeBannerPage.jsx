@@ -9,9 +9,9 @@ const HomeBannerPage = () => {
         <>
             <section className='mb-5'>
                 <Container >
-                    <div className="row g-0 p-0">
+                    <div className="row g-0 p-0 align-items-baseline">
                         <div className="col-md-6">
-                            <div className="row g-0">
+                            <div className="row align-items-baseline g-0">
                                 <div className="col-md-6 col-6">
                                     <div className='flashimagelight'>
                                         <img src={HomeBannerimg4} className='img-fluid' alt="" />
@@ -22,9 +22,9 @@ const HomeBannerPage = () => {
                                         <img src={HomeBannerimg5} className='img-fluid' alt="" />
                                     </div>
                                 </div>
-
                             </div>
                         </div>
+
                         <div className="col-lg-6 col-12">
                             <div className='flashimagelight'>
                                 <img src={HomeBannerimg6} className='img-fluid' alt="" />

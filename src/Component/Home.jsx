@@ -11,6 +11,8 @@ import TopCategory from "./TopCategory";
 function HomePage() {
     return (
         <>
+
+
             <HomeSection1 />
             <HomeBannerPage />
             <HomeSection3 />
