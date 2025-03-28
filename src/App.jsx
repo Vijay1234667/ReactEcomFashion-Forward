@@ -33,7 +33,7 @@ function App() {
         <HeaderTopNav />
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/ReactEcomFashion-Forward" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/crud" element={<Crud />} />
           <Route path="/create" element={<Add />} />
